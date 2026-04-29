@@ -1,0 +1,146 @@
+{
+  "creator": {
+    "name": "Creator Name",
+    "initials": "CN",
+    "email": "hello@example.com",
+    "phone": "",
+    "instagram": "https://www.instagram.com/heyhillandhazel/",
+    "lead": "Authentic photo and video content for brands that need scroll-stopping creative, clear product storytelling, and real-life trust.",
+    "contactCopy": "Send the product, campaign goal, timeline, and deliverables. I’ll reply with availability and next steps."
+  },
+  "brands": [
+    "OLAY",
+    "e.l.f.",
+    "La Roche-Posay",
+    "Nespresso",
+    "Daisy",
+    "Native"
+  ],
+  "videos": [
+    {
+      "title": "Hydration Reminder",
+      "category": "Product Demo",
+      "brand": "Delta Baby",
+      "description": "Native-feeling product walkthrough with a clear use case and parent-focused context.",
+      "video": "assets/videos/reel-01.mp4",
+      "poster": "assets/images/posters/reel-01.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "PR Unboxing",
+      "category": "Unboxing",
+      "brand": "Ayla & Co",
+      "description": "Soft lifestyle unboxing that introduces features without feeling over-scripted.",
+      "video": "assets/videos/reel-02.mp4",
+      "poster": "assets/images/posters/reel-02.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "Cozy Home Finds",
+      "category": "Lifestyle",
+      "brand": "Blissy",
+      "description": "Everyday routine content with clean visual pacing and product-led storytelling.",
+      "video": "assets/videos/reel-03.mp4",
+      "poster": "assets/images/posters/reel-03.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "Morning Routine",
+      "category": "Raw Footage",
+      "brand": "Raw Footage",
+      "description": "Longer-form capture sample for brands that need flexible edit options.",
+      "video": "assets/videos/reel-04.mp4",
+      "poster": "assets/images/posters/reel-04.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "Glow Ritual Cleanser",
+      "category": "Testimonial",
+      "brand": "One Take",
+      "description": "Simple direct-to-camera framing for testimonial, founder-style, and social proof scripts.",
+      "video": "assets/videos/reel-05.mp4",
+      "poster": "assets/images/posters/reel-05.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "Recipe Voiceover",
+      "category": "Voiceover",
+      "brand": "Just Ingredients",
+      "description": "Voiceover-led product story with natural B-roll and practical benefit framing.",
+      "video": "assets/videos/reel-06.mp4",
+      "poster": "assets/images/posters/reel-06.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "Lifestyle Diaper Demo",
+      "category": "Lifestyle",
+      "brand": "Coterie",
+      "description": "Family lifestyle content built around real routines and practical product moments.",
+      "video": "assets/videos/reel-07.mp4",
+      "poster": "assets/images/posters/reel-07.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "Story Sequence",
+      "category": "Organic Social",
+      "brand": "Stories",
+      "description": "Casual social-first clips suitable for stories, reels, and creator whitelisting.",
+      "video": "assets/videos/reel-08.mp4",
+      "poster": "assets/images/posters/reel-08.jpg",
+      "sourceUrl": "https://hillaryunruhportfolio.my.canva.site/hillaryunruh-ugc-portfolio"
+    },
+    {
+      "title": "TikTok Shop Demo",
+      "category": "Product Demo",
+      "brand": "Fun Favorite Finds",
+      "description": "Short-form product content with a native TikTok pace and clear visual hook.",
+      "video": "assets/videos/reel-09.mp4",
+      "poster": "assets/images/posters/reel-09.jpg",
+      "sourceUrl": "https://www.tiktok.com/@funfavoritefinds/video/7281313196697226542"
+    }
+  ],
+  "services": [
+    {
+      "title": "Product Demo",
+      "body": "Clear, benefit-led videos that show how the product fits into real routines."
+    },
+    {
+      "title": "Unboxing",
+      "body": "Natural first impressions, package reveals, and product details with social-first pacing."
+    },
+    {
+      "title": "Lifestyle Content",
+      "body": "Real-life scenes that make the product feel useful, approachable, and easy to remember."
+    },
+    {
+      "title": "Voiceover",
+      "body": "Narrated product stories that explain benefits with clarity, warmth, and a strong hook."
+    },
+    {
+      "title": "Testimonial",
+      "body": "Founder-style and customer-style proof points that build trust and move viewers to act."
+    }
+  ],
+  "process": [
+    {
+      "title": "Inquiry",
+      "body": "You share your campaign goals, product details, and creative needs."
+    },
+    {
+      "title": "Strategy Call",
+      "body": "We align on audience, hooks, deliverables, and timeline."
+    },
+    {
+      "title": "Create",
+      "body": "I film native-style content built around your brief."
+    },
+    {
+      "title": "Deliver",
+      "body": "You receive ready-to-post assets on schedule."
+    },
+    {
+      "title": "Results",
+      "body": "Content designed to build trust, explain the product, and drive action."
+    }
+  ]
+}

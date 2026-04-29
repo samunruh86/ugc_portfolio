@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Name | UGC Portfolio</title>
+  <meta name="description" content="UGC portfolio for short-form lifestyle, product demo, unboxing, testimonial, and brand storytelling content.">
+  <meta property="og:title" content="Creator Name | UGC Portfolio">
+  <meta property="og:description" content="Scroll-stopping photo and video content built on real life, clear storytelling, and brand strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      try {
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.classList.add("ix-ready");
+        }
+      } catch (error) {
+        document.documentElement.classList.add("ix-ready");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Creator Name home">
+      <span class="brand__text">Creator Name</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="mailto:hello@example.com" data-email-link>Work With Me</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-mark hero-mark--loop" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M87 18c-32 4-54 28-45 54 8 24 44 22 50 0 5-19-18-35-40-21" />
+      </svg>
+      <svg class="hero-mark hero-mark--spark" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M60 12v96M12 60h96M28 28l64 64M92 28 28 92" />
+      </svg>
+      <div class="hero__copy" data-ix="fade-up" data-ix-load>
+        <h1 id="hero-title">UGC Portfolio</h1>
+        <p class="hero__lead" data-hero-lead>Scroll-stopping photo and video content built on real life, clear storytelling, and brand strategy.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#work">View Work <span aria-hidden="true">↓</span></a>
+          <a class="button button--ghost" href="mailto:hello@example.com" data-email-link>Work With Me</a>
+        </div>
+        <p class="hero__tagline">Create. Connect. Convert.</p>
+      </div>
+
+      <div class="hero__media" aria-label="Portfolio media preview">
+        <figure class="hero-card" data-ix="scale-in" data-ix-load data-ix-delay="120">
+          <img src="assets/images/hero.jpg" alt="Creator portrait placeholder">
+        </figure>
+        <div class="hero-reels" data-hero-reels data-ix="fade-up-soft" data-ix-load data-ix-delay="220"></div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="section__header section__header--center" data-ix="fade-up">
+        <p class="eyebrow">Featured Work</p>
+        <h2 id="work-title">Recent UGC Projects</h2>
+        <p class="section__subcopy">A mix of product demos, lifestyle clips, testimonials, and voiceovers created for social-first campaigns.</p>
+      </div>
+      <div class="filters" data-filters aria-label="Filter videos" data-ix="fade-up-soft"></div>
+      <div class="work-grid" data-work-grid data-ix-stagger="children" data-ix-stagger-step="70"></div>
+      <button class="button button--more" type="button" data-view-more data-ix="fade-up">View More Work</button>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="services-layout" data-ix="fade-up">
+        <div class="services-intro">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">What I Create</h2>
+          <p>High-quality UGC built to feel native to social platforms while giving brands clear, usable creative for testing and scaling.</p>
+        </div>
+        <div class="service-grid" data-services data-ix-stagger="children" data-ix-stagger-step="80"></div>
+      </div>
+    </section>
+
+    <section class="trusted" id="about" aria-labelledby="trusted-title" data-ix="fade-up">
+      <h2 id="trusted-title">Brands I’ve created for</h2>
+      <div class="brand-strip" data-brand-strip data-ix-stagger="children" data-ix-stagger-step="60"></div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="section__header section__header--center" data-ix="fade-up">
+        <p class="eyebrow">Simple Process</p>
+        <h2 id="process-title">My Process</h2>
+      </div>
+      <ol class="process-list" data-process data-ix-stagger="children" data-ix-stagger-step="85"></ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title" data-ix="fade-up">
+      <div class="contact__photo" aria-hidden="true"></div>
+      <div class="contact__panel">
+        <p class="eyebrow">Now Booking</p>
+        <h2 id="contact-title">Let’s create content your audience will trust.</h2>
+        <p data-contact-copy>Have a project in mind? I’d love to hear about it.</p>
+        <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain" data-contact-form>
+          <div class="contact-form__row">
+            <input type="text" name="name" placeholder="Your Name" aria-label="Your name">
+            <input type="email" name="email" placeholder="Email Address" aria-label="Email address">
+          </div>
+          <textarea name="message" placeholder="Tell me about your project..." aria-label="Project details"></textarea>
+          <div class="contact-form__submit">
+            <button class="button button--primary" type="submit">Send Inquiry</button>
+            <p>Typical reply time: 1–2 business days.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="video-modal" data-modal hidden>
+    <button class="video-modal__close" type="button" data-modal-close aria-label="Close video">Close</button>
+    <video class="video-modal__video" data-modal-video controls playsinline></video>
+  </div>
+
+  <footer class="site-footer">
+    <p data-creator-name>Creator Name</p>
+    <nav aria-label="Footer navigation">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener" data-instagram-link aria-label="TikTok">♪</a>
+      <a href="#" target="_blank" rel="noopener" data-instagram-link aria-label="Instagram">◎</a>
+      <a href="mailto:hello@example.com" data-email-link aria-label="Email">✉</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
