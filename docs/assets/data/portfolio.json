@@ -21,76 +21,52 @@
   ],
   "videos": [
     {
-      "title": "Hydration Reminder",
-      "category": "Product Demo",
-      "brand": "Delta Baby",
-      "description": "Product demo / A real parent-focused walkthrough that shows the product in everyday family life.",
+      "title": "Purely Elizabeth Cookie Granola",
+      "category": "Food Demo",
+      "brand": "Purely Elizabeth",
+      "description": "Food demo / Close-up recipe-style content that makes the product feel easy to use and craveable.",
       "video": "assets/videos/reel-01.mp4",
       "poster": "assets/images/posters/reel-01.jpg"
     },
     {
-      "title": "PR Unboxing",
-      "category": "Unboxing",
-      "brand": "Ayla & Co",
-      "description": "Unboxing / Natural first impressions that make the product feel exciting, clear, and easy to understand.",
+      "title": "Pay-It-Forward Cafe Visit",
+      "category": "Local Lifestyle",
+      "brand": "Thelma's Kitchen",
+      "description": "Local lifestyle / First-person cafe visit footage with native captions and an approachable community feel.",
       "video": "assets/videos/reel-02.mp4",
       "poster": "assets/images/posters/reel-02.jpg"
     },
     {
-      "title": "Cozy Home Finds",
-      "category": "Lifestyle",
-      "brand": "Blissy",
-      "description": "Lifestyle / Everyday home content that shows how the product fits into a real routine.",
+      "title": "Cherry Warehouse Hotel",
+      "category": "Raw Footage",
+      "brand": "Cherry Warehouse Hotel",
+      "description": "Raw footage / Flexible location clips that brands can use for edits, social posts, and paid creative.",
       "video": "assets/videos/reel-03.mp4",
       "poster": "assets/images/posters/reel-03.jpg"
     },
     {
-      "title": "Morning Routine",
-      "category": "Raw Footage",
-      "brand": "Raw Footage",
-      "description": "Raw Footage / Flexible real-life clips brands can use for ads, edits, and organic social.",
+      "title": "Iced Coffee Stop",
+      "category": "Lifestyle B-Roll",
+      "brand": "Coffee Shop",
+      "description": "Lifestyle B-roll / Quick atmospheric clips that establish setting, routine, and product-adjacent moments.",
       "video": "assets/videos/reel-04.mp4",
       "poster": "assets/images/posters/reel-04.jpg"
     },
     {
-      "title": "Glow Ritual Cleanser",
-      "category": "Testimonial",
-      "brand": "One Take",
-      "description": "Testimonial / Direct-to-camera content that feels honest, personal, and believable.",
+      "title": "Kradle Bliss Bar Demo",
+      "category": "Product Demo",
+      "brand": "Kradle",
+      "description": "Product demo / Clear handheld product content that highlights packaging, use case, and key benefits.",
       "video": "assets/videos/reel-05.mp4",
       "poster": "assets/images/posters/reel-05.jpg"
     },
     {
-      "title": "Recipe Voiceover",
-      "category": "Voiceover",
-      "brand": "Just Ingredients",
-      "description": "Voiceover / Food and lifestyle storytelling with natural B-roll and clear product benefits.",
+      "title": "Target Shopping Trip",
+      "category": "Organic Social",
+      "brand": "Target",
+      "description": "Organic social / Casual shopping-trip footage that feels native to short-form social content.",
       "video": "assets/videos/reel-06.mp4",
       "poster": "assets/images/posters/reel-06.jpg"
-    },
-    {
-      "title": "Lifestyle Diaper Demo",
-      "category": "Lifestyle",
-      "brand": "Coterie",
-      "description": "Family Lifestyle / Real mom content that shows practical use without feeling like an ad.",
-      "video": "assets/videos/reel-07.mp4",
-      "poster": "assets/images/posters/reel-07.jpg"
-    },
-    {
-      "title": "Story Sequence",
-      "category": "Organic Social",
-      "brand": "Stories",
-      "description": "Organic Social / Casual story-style clips made to feel native to TikTok and Reels.",
-      "video": "assets/videos/reel-08.mp4",
-      "poster": "assets/images/posters/reel-08.jpg"
-    },
-    {
-      "title": "TikTok Shop Demo",
-      "category": "Product Demo",
-      "brand": "Fun Favorite Finds",
-      "description": "TikTok Shop / Fast, clear product content with a hook, use case, and reason to buy.",
-      "video": "assets/videos/reel-09.mp4",
-      "poster": "assets/images/posters/reel-09.jpg"
     }
   ],
   "services": [
