@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hayley | UGC Creator</title>
-  <meta name="description" content="Authentic TikTok-style UGC for lifestyle, family, food, beauty, and everyday product brands.">
-  <meta property="og:title" content="Hayley | UGC Creator">
-  <meta property="og:description" content="Real-life UGC that feels native to TikTok, builds trust, and helps brands drive action.">
+  <title>Fun Favorite Finds - UGC Portfolio</title>
+  <meta name="description" content="Fun Favorite Finds is a UGC portfolio for product demos, lifestyle clips, and creator-led social content.">
+  <meta property="og:title" content="Fun Favorite Finds - UGC Portfolio">
+  <meta property="og:description" content="Product demos, lifestyle clips, and creator-led social content from Fun Favorite Finds.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/hero.jpeg">
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="assets/images/image-home-hero-hayley-p-1200.jpeg">
+  <link rel="icon" href="assets/svgs/favicon-influencer.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/svgs/webclip-influencer.svg">
   <script>
     (() => {
       try {
+        const params = new URLSearchParams(window.location.search || "");
+        if (params.get("captureStatic") === "true") {
+          document.documentElement.dataset.captureStatic = "true";
+        }
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
           document.documentElement.classList.add("ix-ready");
         }
@@ -21,134 +26,272 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260430a">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="site-header" data-header>
-    <nav class="nav container container--wide" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Hayley home">
-        <span class="brand__text">Hayley</span>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Influencer home">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle class="brand-mark-lens" cx="20" cy="20" r="11.25"></circle>
+          <path class="brand-mark-handle" d="M28.4 28.4 37 37"></path>
+          <path class="brand-mark-sparkle" d="M18.6 13.4 19.85 17.1 23.55 18.35 19.85 19.6 18.6 23.3 17.35 19.6 13.65 18.35 17.35 17.1Z"></path>
+        </svg>
+        <span class="brand-word">Fun Favorite Finds</span>
       </a>
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" aria-label="Primary navigation" data-nav-menu>
+        <a href="#videos">Videos</a>
+        <a href="#about">About Me</a>
+        <a href="#products">Packages</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+      <div class="nav-action">
+        <a class="button button-primary" href="#contact">Let's Work Together <span class="button-plus" aria-hidden="true">+</span></a>
       </div>
-      <div class="nav-actions">
-        <a class="btn btn-primary" href="mailto:hello@example.com" data-email-link>
-          Let’s Work Together
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-        </a>
-      </div>
-    </nav>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="container container--wide hero-grid">
-        <svg class="hero-mark hero-mark--loop" viewBox="0 0 120 120" aria-hidden="true">
-          <path d="M87 18c-32 4-54 28-45 54 8 24 44 22 50 0 5-19-18-35-40-21" />
-        </svg>
-        <svg class="hero-mark hero-mark--spark" viewBox="0 0 120 120" aria-hidden="true">
-          <path d="M60 12v96M12 60h96M28 28l64 64M92 28 28 92" />
-        </svg>
-        <div class="hero-section__copy" data-ix="fade-up" data-ix-load>
-        <p class="eyebrow hero-section__eyebrow">UGC Creator</p>
-        <h1 id="hero-title">Content that feels real. Content that sells.</h1>
-        <p class="lead hero-section__lead" data-render="hero-lead">Authentic TikTok-style content that stops the scroll, builds trust, and gives your audience a reason to act.</p>
-        <div class="hero-section__actions">
-          <a class="btn btn-primary" href="#work">
-            View My Work
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-          </a>
-          <a class="btn btn-secondary" href="mailto:hello@example.com" data-email-link>Work With Me</a>
+    <section class="section hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-ix="fade-up" data-ix-load>
+          <h1 id="hero-title">I'm <span>Hayley</span>, a mom and <span>content creator</span>.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit rutrum ut cras natoque proin nunc, lobortis massa. Amet sed pharetra semper bibendum nisl. Feugiat molestie egestas.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#contact">Let's Work Together <span class="button-plus" aria-hidden="true">+</span></a>
+            <div class="hero-social" aria-label="Social media links">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/svgs/icon-social-media-journey-03-influencer.svg" alt=""></a>
+              <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/svgs/icon-social-media-journey-06-influencer.svg" alt=""></a>
+            </div>
+          </div>
         </div>
-          <div class="contact-links hero-section__contact" data-render="hero-contact"></div>
-        </div>
-
-        <div class="hero-section__media" aria-label="Portfolio media preview">
-          <div data-render="hero-feature" data-ix="scale-in" data-ix-load data-ix-delay="120"></div>
+        <div class="hero-media" data-ix="scale-in" data-ix-load>
+          <picture>
+            <source srcset="assets/images/image-home-hero-hayley-p-500.jpeg 500w, assets/images/image-home-hero-hayley-p-800.jpeg 800w, assets/images/image-home-hero-hayley-p-1200.jpeg 1200w, assets/images/image-home-hero-hayley-p-1600.jpeg 1600w" sizes="(max-width: 767px) 90vw, 470px">
+            <img src="assets/images/image-home-hero-hayley-p-1200.jpeg" alt="Hayley standing in front of a mountain lake">
+          </picture>
         </div>
       </div>
     </section>
 
-    <section class="section work-section" id="work" aria-labelledby="work-title">
+    <section class="achievements-section" id="achievements" aria-label="Influencer achievements">
+      <div class="container achievement-grid" data-ix-stagger="children">
+        <div class="achievement proof-stat-item"><strong aria-label="+126k Video Views"><span class="proof-stat-prefix">+</span><span class="proof-stat-number" data-count-target="126" data-count-decimals="0">126</span><span class="proof-stat-suffix">k</span></strong><p>Video Views</p></div>
+        <div class="achievement proof-stat-item"><strong aria-label="+8k Followers"><span class="proof-stat-prefix">+</span><span class="proof-stat-number" data-count-target="8" data-count-decimals="0">8</span><span class="proof-stat-suffix">k</span></strong><p>Followers</p></div>
+        <div class="achievement proof-stat-item"><strong aria-label="+156k Likes"><span class="proof-stat-prefix">+</span><span class="proof-stat-number" data-count-target="156" data-count-decimals="0">156</span><span class="proof-stat-suffix">k</span></strong><p>Likes</p></div>
+        <div class="achievement proof-stat-item"><strong aria-label="+45k Comments"><span class="proof-stat-prefix">+</span><span class="proof-stat-number" data-count-target="45" data-count-decimals="0">45</span><span class="proof-stat-suffix">k</span></strong><p>Comments</p></div>
+      </div>
+    </section>
+
+    <section class="section videos-section" id="videos" aria-labelledby="videos-title">
+      <div class="container">
+        <div class="section-heading" data-ix="fade-up">
+          <h2 id="videos-title">My Latest Videos<span>.</span></h2>
+          <p>Recent product demos, everyday favorites, and creator-led finds made for social campaigns.</p>
+        </div>
+        <div class="reels-track" data-ix-stagger="children">
+          <article class="reel-card" data-reel>
+            <button class="reel-phone" type="button" aria-label="Play Delta Baby product demo">
+              <video preload="metadata" playsinline muted loop poster="assets/images/posters/reel-01.jpg" src="assets/videos/reel-01.mp4"></video>
+              <span class="reel-play" aria-hidden="true"></span>
+            </button>
+            <p>Delta Baby</p>
+            <h3>Product Demo</h3>
+          </article>
+          <article class="reel-card" data-reel>
+            <button class="reel-phone" type="button" aria-label="Play Ayla & Co unboxing">
+              <video preload="metadata" playsinline muted loop poster="assets/images/posters/reel-02.jpg" src="assets/videos/reel-02.mp4"></video>
+              <span class="reel-play" aria-hidden="true"></span>
+            </button>
+            <p>Ayla &amp; Co</p>
+            <h3>Unboxing</h3>
+          </article>
+          <article class="reel-card" data-reel>
+            <button class="reel-phone" type="button" aria-label="Play Blisssy lifestyle video">
+              <video preload="metadata" playsinline muted loop poster="assets/images/posters/reel-03.jpg" src="assets/videos/reel-03.mp4"></video>
+              <span class="reel-play" aria-hidden="true"></span>
+            </button>
+            <p>Blisssy</p>
+            <h3>Lifestyle</h3>
+          </article>
+          <article class="reel-card" data-reel>
+            <button class="reel-phone" type="button" aria-label="Play everyday favorite video">
+              <video preload="metadata" playsinline muted loop poster="assets/images/posters/reel-04.jpg" src="assets/videos/reel-04.mp4"></video>
+              <span class="reel-play" aria-hidden="true"></span>
+            </button>
+            <p>Favorite Find</p>
+            <h3>Everyday Demo</h3>
+          </article>
+          <article class="reel-card" data-reel>
+            <button class="reel-phone" type="button" aria-label="Play home product video">
+              <video preload="metadata" playsinline muted loop poster="assets/images/posters/reel-05.jpg" src="assets/videos/reel-05.mp4"></video>
+              <span class="reel-play" aria-hidden="true"></span>
+            </button>
+            <p>Home Pick</p>
+            <h3>Quick Review</h3>
+          </article>
+          <article class="reel-card" data-reel>
+            <button class="reel-phone" type="button" aria-label="Play family favorite video">
+              <video preload="metadata" playsinline muted loop poster="assets/images/posters/reel-06.jpg" src="assets/videos/reel-06.mp4"></video>
+              <span class="reel-play" aria-hidden="true"></span>
+            </button>
+            <p>Family Favorite</p>
+            <h3>Social Reel</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img class="about-img about-img--front" src="assets/images/image-about-hayley-01-p-800.jpeg" srcset="assets/images/image-about-hayley-01-p-500.jpeg 500w, assets/images/image-about-hayley-01-p-800.jpeg 800w, assets/images/image-about-hayley-01-p-1200.jpeg 1200w, assets/images/image-about-hayley-01-p-1600.jpeg 1600w" sizes="(max-width: 767px) 58vw, 330px" alt="Hayley smiling near the beach with her husband" data-ix="scale-in">
+          <img class="about-img about-img--back" src="assets/images/image-about-hayley-02-p-800.jpeg" srcset="assets/images/image-about-hayley-02-p-500.jpeg 500w, assets/images/image-about-hayley-02-p-800.jpeg 800w, assets/images/image-about-hayley-02-p-1200.jpeg 1200w, assets/images/image-about-hayley-02-p-1600.jpeg 1600w" sizes="(max-width: 767px) 58vw, 330px" alt="Hayley smiling at a football stadium with her husband" data-ix="scale-in">
+        </div>
+        <div class="about-copy" data-ix="fade-up">
+          <h2 id="about-title">About <span>Me</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit rutrum ut cras natoque proin nunc, lobortis massa. Amet sedphar semper bibendum nisl. Feugiat molestie egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elitcras.</p>
+          <a class="button button-primary" href="#contact">Let's Work Together <span class="button-plus" aria-hidden="true">+</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products" aria-labelledby="products-title">
       <div class="container">
         <div class="section-heading section-heading--center" data-ix="fade-up">
-          <p class="eyebrow">Featured Work</p>
-          <h2 id="work-title">Recent UGC Projects</h2>
-          <p class="section-heading__copy">Product demos, lifestyle clips, testimonials, voiceovers, and family-friendly content made to feel native to TikTok.</p>
+          <h2 id="products-title">My Packages<span>.</span></h2>
+          <p>Simple UGC video packages for product demos, lifestyle clips, and consistent social content.</p>
         </div>
-        <div class="video-grid" data-render="work-grid" data-ix-stagger="children" data-ix-stagger-step="70"></div>
-        <button class="btn btn-secondary work-section__more" type="button" data-action="toggle-work" data-ix="fade-up">See More Work</button>
+        <div class="package-grid" data-ix-stagger="children">
+          <article class="package-card">
+            <div class="package-visual" aria-hidden="true">
+              <span>1</span>
+              <small>video</small>
+            </div>
+            <p class="package-label">Starter</p>
+            <h3>Single Video</h3>
+            <strong>$70</strong>
+            <p class="package-copy">A focused UGC video for testing one product, offer, or content angle.</p>
+            <ul class="package-list">
+              <li>1 short-form vertical video</li>
+              <li>Product demo or lifestyle concept</li>
+              <li>Simple creator script or hook</li>
+              <li>Edited video ready for posting</li>
+              <li>Organic social usage</li>
+            </ul>
+          </article>
+          <article class="package-card package-card--featured">
+            <span class="package-badge">Most Popular</span>
+            <div class="package-visual" aria-hidden="true">
+              <span>10</span>
+              <small>/ month</small>
+            </div>
+            <p class="package-label">Monthly</p>
+            <h3>10 Videos Per Month</h3>
+            <strong>$200</strong>
+            <p class="package-copy">A steady content batch for brands that need consistent creator videos.</p>
+            <ul class="package-list">
+              <li>10 short-form vertical videos</li>
+              <li>Multiple hooks and angles</li>
+              <li>Demo, lifestyle, or voiceover clips</li>
+              <li>Edited videos ready for posting</li>
+              <li>Monthly batch delivery</li>
+            </ul>
+          </article>
+          <article class="package-card">
+            <div class="package-visual" aria-hidden="true">
+              <span>40</span>
+              <small>/ month</small>
+            </div>
+            <p class="package-label">Growth</p>
+            <h3>40 Videos Per Month</h3>
+            <strong>$485</strong>
+            <p class="package-copy">A higher-volume content engine for testing lots of creator-led angles.</p>
+            <ul class="package-list">
+              <li>40 short-form vertical videos</li>
+              <li>High-volume concept variation</li>
+              <li>Demo, lifestyle, and testimonial-style clips</li>
+              <li>Edited videos ready for posting</li>
+              <li>Priority monthly production schedule</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section services-section" id="services" aria-labelledby="services-title">
-      <div class="container services-layout" data-ix="fade-up">
-        <div class="section-heading">
-          <p class="eyebrow">Services</p>
-          <h2 id="services-title">What I Create</h2>
-          <p class="section-heading__copy">Real-life content that helps your product feel useful, trustworthy, and easy to buy.</p>
-        </div>
-        <div class="icon-card-grid" data-render="services" data-ix-stagger="children" data-ix-stagger-step="80"></div>
+    <section class="section faq-section" id="faqs" aria-labelledby="faq-title">
+      <div class="container faq-intro" data-ix="scale-in">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum eget convallis in ut nec amet sit egestas.</p>
+      </div>
+      <div class="container faq-list" data-ix-stagger="children">
+        <details class="faq-item">
+          <summary><span></span>Lorem ipsum dolor sit amet, consectetur adipiscing</summary>
+          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pharetra quis diam imperdiet sed nisi. Turpis non elit mauris est, nisl aliquam dignissim ultricies lorem. In non risus consectetur tellus nulla nec ullamcorper in eu.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span></span>Lorem ipsum dolor sit amet, consectetur adipiscing</summary>
+          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pharetra quis diam imperdiet sed nisi. Turpis non elit mauris est, nisl aliquam dignissim ultricies lorem. In non risus consectetur tellus nulla nec ullamcorper in eu.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span></span>Lorem ipsum dolor sit amet, consectetur adipiscing</summary>
+          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pharetra quis diam imperdiet sed nisi. Turpis non elit mauris est, nisl aliquam dignissim ultricies lorem. In non risus consectetur tellus nulla nec ullamcorper in eu.</p></div>
+        </details>
       </div>
     </section>
 
-    <section class="section process-section" id="process" aria-labelledby="process-title">
-      <div class="container">
-        <div class="section-heading section-heading--center" data-ix="fade-up">
-          <p class="eyebrow">Simple Process</p>
-          <h2 id="process-title">My Process</h2>
-        </div>
-        <ol class="process-steps" data-render="process" data-ix-stagger="children" data-ix-stagger-step="85"></ol>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-intro" data-ix="scale-in">
+        <h2 id="contact-title">Let's Work <span>Together</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna aliquet nibh vitae tellus facilisi velit. Sapien hac vitae et vel.</p>
+        <a class="contact-email" href="mailto:FunFavoriteFinds@gmail.com">
+          <span><img src="assets/svgs/icon-contact-influencer.svg" alt=""></span>
+          FunFavoriteFinds@gmail.com
+        </a>
       </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title" data-ix="fade-up">
-      <div class="contact-section__photo" aria-hidden="true"></div>
-      <div class="contact-section__panel">
-        <p class="eyebrow">Now Booking</p>
-        <h2 id="contact-title">Let’s create content your audience will trust.</h2>
-        <p class="contact-section__copy" data-render="contact-copy">Share your campaign goal, product details, timeline, and deliverables. Hayley will reply with availability, clear next steps, and what she needs to get started.</p>
-        <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain" data-contact-form>
-          <div class="contact-form__row">
-            <input class="form-field form-field--input" type="text" name="name" placeholder="Your Name" aria-label="Your name">
-            <input class="form-field form-field--input" type="email" name="email" placeholder="Email Address" aria-label="Email address">
+      <div class="container contact-form-wrap">
+        <form class="contact-card" data-ix="scale-in" action="#" method="get">
+          <h2>Send me a message</h2>
+          <div class="contact-fields">
+            <label>Full Name*<input type="text" name="name" placeholder="What's your name?" required></label>
+            <label>Email*<input type="email" name="email" placeholder="What's your email?" required></label>
+            <label>Subject*<input type="text" name="subject" placeholder="What's your name?" required></label>
+            <label>Your Message<textarea name="message" placeholder="I would like to get in touch with you for..."></textarea></label>
           </div>
-          <textarea class="form-field form-field--textarea" name="message" placeholder="Tell me about your project..." aria-label="Project details"></textarea>
-          <div class="contact-form__submit">
-            <button class="btn btn-primary" type="submit">Send Inquiry</button>
-            <p class="contact-form__note">Typical response time: 1–2 business days.</p>
-          </div>
+          <button class="button button-primary" type="submit">Send Message</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container container--wide footer-grid">
-      <p class="brand" data-creator-name>Hayley</p>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer-social">
-        <a href="#" target="_blank" rel="noopener" data-tiktok-link aria-label="TikTok">♪</a>
-        <a href="#" target="_blank" rel="noopener" data-instagram-link aria-label="Instagram">◎</a>
-        <a href="mailto:hello@example.com" data-email-link aria-label="Email">✉</a>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle class="brand-mark-lens" cx="20" cy="20" r="11.25"></circle><path class="brand-mark-handle" d="M28.4 28.4 37 37"></path><path class="brand-mark-sparkle" d="M18.6 13.4 19.85 17.1 23.55 18.35 19.85 19.6 18.6 23.3 17.35 19.6 13.65 18.35 17.35 17.1Z"></path></svg><span class="brand-word">Fun Favorite Finds</span></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pharetra quis diam imperdiet sed nisi.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="small-print">Copyright © 2026 | Fun Favorite Finds</div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/svgs/icon-social-media-journey-03-influencer.svg" alt=""></a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/svgs/icon-social-media-journey-06-influencer.svg" alt=""></a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/data.js?v=20260430a"></script>
-  <script src="assets/js/video.js?v=20260430a"></script>
-  <script src="assets/js/reveal.js?v=20260430a"></script>
-  <script src="assets/js/header.js?v=20260430a"></script>
-  <script src="assets/js/render.js?v=20260430a"></script>
-  <script src="assets/js/main.js?v=20260430a"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/stats.js"></script>
+  <script src="assets/js/reels.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

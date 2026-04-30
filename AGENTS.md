@@ -5,14 +5,15 @@ This project is a static GitHub Pages UGC portfolio. Keep it simple, fast, and e
 ## Scope
 
 - Publishable site lives in `docs/`.
+- Previous site snapshot lives in `docs_v1/`.
 - There is no build system, package manager, framework, or backend.
 - Do not add dependencies or introduce a build step unless explicitly requested.
-- Prefer editing `docs/assets/data/portfolio.json` for content changes.
+- Prefer editing `docs/index.html` for content changes in the current static page.
 - Keep HTML/CSS/JS hand-authored and static-site friendly.
 
 ## Local Preview
 
-Because `assets/main.js` uses `fetch()` to load JSON, preview through a local server instead of opening the HTML file directly.
+Preview through a local server so relative assets, video files, and deployment paths behave like GitHub Pages.
 
 From `docs/`:
 
@@ -38,7 +39,7 @@ The intended visual direction is:
 - closer to the already-built site than the loud Webflow influencer template
 - borrow from Webflow/SiteLift only for clean spacing, motion, SVG quality, interaction polish, and layout discipline
 - avoid decorative clutter, oversized marketing sections, and one-note palettes
-- preserve the refined serif headline, blue CTA, phone-frame video cards, sage contact section, and editorial UGC feel
+- preserve the content-creator portfolio direction, polished motion, phone-frame video cards, clear packages, and editorial UGC feel
 
 Important UI constraints:
 
@@ -54,9 +55,9 @@ Important UI constraints:
 The current animation system is based on the SiteLift static site pattern:
 
 - `index.html` adds `ix-ready` early.
-- Elements use `data-ix`, `data-ix-load`, `data-ix-delay`, and `data-ix-stagger`.
-- `docs/assets/main.js` owns reveal setup and IntersectionObserver behavior.
-- `docs/assets/style.css` owns reveal CSS.
+- Elements use `data-ix`, `data-ix-load`, and `data-ix-stagger`.
+- `docs/assets/js/reveal.js` owns reveal setup and IntersectionObserver behavior.
+- `docs/assets/css/motion.css` owns reveal CSS.
 
 When adding animation:
 
@@ -67,21 +68,20 @@ When adding animation:
 
 ## Icons
 
-Some relevant SVG references were copied from SiteLift into `docs/assets/icons/` for future static use. Inline icons in `main.js` are currently optimized for service/process display.
+SVG references live in `docs/assets/svgs/` and are used directly from the static HTML.
 
 If improving icons:
 
 - Prefer clean stroke SVGs that inherit `currentColor`.
 - Keep a consistent `viewBox`, stroke width, linecap, and linejoin.
 - Avoid adding large icon libraries.
-- If copying from SiteLift, copy only the small files needed and keep them under `docs/assets/icons/`.
+- If copying additional SVGs, copy only the small files needed and keep them under `docs/assets/svgs/`.
 
 ## Media
 
 Expected media paths:
 
-- hero: `docs/assets/images/hero.jpg`
-- contact: `docs/assets/images/contact.jpeg`
+- hero: `docs/assets/images/image-home-hero-hayley-p-1200.jpeg`
 - posters: `docs/assets/images/posters/reel-XX.jpg`
 - public videos: `docs/assets/videos/reel-XX.mp4`
 - raw videos: `docs/assets/videos/raw-XX.mp4`
@@ -93,7 +93,7 @@ Expected media paths:
 For code changes, run:
 
 ```sh
-node --check docs/assets/main.js
+node --check docs/assets/js/*.js
 ```
 
 For visual changes, inspect with Playwright or the in-app browser:
@@ -101,8 +101,9 @@ For visual changes, inspect with Playwright or the in-app browser:
 - desktop viewport around `1440px`
 - mobile viewport around `390px`
 - full-page screenshot
-- filter click
-- video modal open/close
+- mobile navigation open/close
+- FAQ open/close
+- reel playback
 - contact/footer on mobile
 
 Report any validation not run.

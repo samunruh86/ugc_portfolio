@@ -1,5 +1,13 @@
 @font-face {
-  font-family: "Brix Montserrat";
+  font-family: "Influencer Montserrat";
+  src: url("../fonts/montserrat-400-normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Influencer Montserrat";
   src: url("../fonts/montserrat-500-normal.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -7,72 +15,50 @@
 }
 
 @font-face {
-  font-family: "Brix Montserrat";
+  font-family: "Influencer Montserrat";
+  src: url("../fonts/montserrat-600-normal.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Influencer Montserrat";
   src: url("../fonts/montserrat-700-normal.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Influencer Montserrat";
+  src: url("../fonts/montserrat-800-normal.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --color-text: #0b091b;
-  --color-text-soft: #3b3653;
-  --color-muted: #5f5a78;
-  --color-page: #f7f6ff;
-  --color-page-overlay: rgba(247, 246, 255, 0.94);
-  --color-surface: #ffffff;
-  --color-surface-soft: #f9f8ff;
-  --color-panel: #d9d7eb;
-  --color-panel-soft: #ebe8f6;
-  --color-inverse: #232046;
-  --color-inverse-strong: #1b1735;
-  --color-on-inverse: #f9f9fd;
-  --color-accent: #fb0f5a;
-  --color-accent-strong: #d9084a;
-  --color-accent-soft: rgba(251, 15, 90, 0.1);
-  --color-border: rgba(35, 32, 70, 0.13);
-  --color-border-strong: rgba(35, 32, 70, 0.22);
-  --color-frame: #232046;
-  --color-shadow: rgba(35, 32, 70, 0.15);
-
-  --font-body: "Brix Montserrat", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-heading: "Brix Montserrat", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
-  --container-max: 1180px;
-  --container-wide: 1320px;
-  --pad-x: clamp(20px, 5vw, 70px);
-
-  --space-6: 6px;
-  --space-8: 8px;
-  --space-10: 10px;
-  --space-12: 12px;
-  --space-14: 14px;
-  --space-16: 16px;
-  --space-18: 18px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-30: 30px;
-  --space-34: 34px;
-  --space-36: 36px;
-  --space-42: 42px;
-  --space-46: 46px;
-  --space-48: 48px;
-  --space-54: 54px;
-  --space-60: 60px;
-  --space-68: 68px;
-  --space-72: 72px;
-  --space-84: 84px;
-  --space-88: 88px;
-
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 22px;
-  --radius-pill: 999px;
-
-  --shadow-sm: 0 10px 24px rgba(35, 32, 70, 0.08);
-  --shadow-md: 0 18px 40px rgba(35, 32, 70, 0.15);
-  --shadow-lg: 0 24px 58px rgba(35, 32, 70, 0.2);
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --neutral-500: #474459;
+  --neutral-700: #0b091b;
+  --primary-1: #fb0f5a;
+  --shape-purple: #770ffb;
+  --white: #ffffff;
+  --secondary-1: #f7f6ff;
+  --secondary-2: #f9f9fd;
+  --shape-blue: #1bbaff;
+  --neutral-600: #232046;
+  --neutral-400: #ceccdc;
+  --neutral-300: #bebdd4;
+  --neutral-200: #e5e5ef;
+  --neutral-100: #f7f7fb;
+  --shape-yellow: #ffce22;
+  --shape-orange: #ff971e;
+  --shadow: 0 16px 46px rgba(35, 32, 70, 0.12);
+  --shadow-strong: 0 24px 70px rgba(35, 32, 70, 0.2);
+  --container: 1220px;
+  --pad-x: clamp(20px, 5vw, 46px);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 *,
@@ -89,27 +75,22 @@ body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
-  color: var(--color-text);
-  background:
-    linear-gradient(var(--color-page-overlay), var(--color-page-overlay)),
-    url("../images/paper-texture.jpg") center / 980px auto;
-  font-family: var(--font-body);
+  color: var(--neutral-500);
+  background: var(--white);
+  font-family: "Influencer Montserrat", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+body.nav-open {
+  overflow: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-img,
-video,
-svg {
-  display: block;
-  max-width: 100%;
 }
 
 button,
@@ -123,6 +104,13 @@ button {
   cursor: pointer;
 }
 
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -133,46 +121,54 @@ p {
 h1,
 h2,
 h3 {
-  font-family: var(--font-heading);
-  color: var(--color-text);
+  color: var(--neutral-700);
+  font-weight: 800;
+  line-height: 1.05;
 }
 
 h1 {
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 1.02;
+  max-width: 590px;
+  font-size: 58px;
 }
 
 h2 {
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 1.08;
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
+  font-size: 22px;
+  line-height: 1.28;
 }
 
-@media (max-width: 1180px) {
+span,
+.accent {
+  color: var(--primary-1);
+}
+
+@media (max-width: 991px) {
   h1 {
-    font-size: 58px;
+    font-size: 48px;
   }
-}
 
-@media (max-width: 820px) {
-  h1 {
-    font-size: 52px;
+  h2 {
+    font-size: 42px;
   }
 }
 
 @media (max-width: 560px) {
+  body {
+    font-size: 15px;
+  }
+
   h1 {
-    font-size: 43px;
+    font-size: 42px;
   }
 
   h2 {
     font-size: 34px;
+  }
+
+  h3 {
+    font-size: 19px;
   }
 }
