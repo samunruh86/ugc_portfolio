@@ -14,17 +14,8 @@
   <script>
     (() => {
       try {
-        const params = new URLSearchParams(window.location.search || "");
-        if (params.get("captureStatic") === "true") {
+        if (new URLSearchParams(window.location.search || "").get("captureStatic") === "true") {
           document.documentElement.dataset.captureStatic = "true";
-        }
-        const colors = params.get("colors");
-        if (/^[0-5]$/.test(colors || "")) {
-          document.documentElement.dataset.theme = colors;
-        }
-        const fonts = params.get("fonts");
-        if (/^[0-5]$/.test(fonts || "")) {
-          document.documentElement.dataset.fonts = fonts;
         }
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
           document.documentElement.classList.add("ix-ready");
@@ -182,13 +173,13 @@
             </div>
             <p class="package-label">Starter</p>
             <h3>Single Video</h3>
-            <strong>$70</strong>
-            <p class="package-copy">1 short-form video to showcase your product and test a content angle.</p>
+            <strong>$49</strong>
+            <p class="package-copy">1 short-form video to test a product angle or create a quick social asset.</p>
             <ul class="package-list">
               <li>1 short-form vertical video</li>
-              <li>Product demo or everyday use concept</li>
+              <li>Product demo or everyday-use concept</li>
               <li>Simple creator script or hook</li>
-              <li>Edited video ready for posting</li>
+              <li>Edited video ready to post</li>
               <li>Organic social usage</li>
             </ul>
           </article>
@@ -200,30 +191,30 @@
             </div>
             <p class="package-label">Monthly</p>
             <h3>10 Videos Per Month</h3>
-            <strong>$200</strong>
+            <strong>$395</strong>
             <p class="package-copy">A monthly content batch for brands that need consistent product content.</p>
             <ul class="package-list">
               <li>10 short-form vertical videos</li>
-              <li>Multiple hooks and angles</li>
-              <li>Everyday use or voiceover clips</li>
-              <li>Edited videos ready for posting</li>
+              <li>Multiple hooks and content angles</li>
+              <li>Product demos, everyday use, or voiceover clips</li>
+              <li>Edited videos ready to post</li>
               <li>Monthly batch delivery</li>
             </ul>
           </article>
           <article class="package-card">
             <div class="package-visual" aria-hidden="true">
-              <span>40</span>
+              <span>25</span>
               <small>/ month</small>
             </div>
             <p class="package-label">Growth</p>
-            <h3>40 Videos Per Month</h3>
-            <strong>$485</strong>
-            <p class="package-copy">A higher-volume content package for brands that want to test and scale content.</p>
+            <h3>25 Videos Per Month</h3>
+            <strong>$695</strong>
+            <p class="package-copy">A higher-volume package for brands that want more content to test and scale.</p>
             <ul class="package-list">
-              <li>40 short-form vertical videos</li>
+              <li>25 short-form vertical videos</li>
               <li>High-volume concept variation</li>
-              <li>Demo, everyday, and testimonial-style clips</li>
-              <li>Edited videos ready for posting</li>
+              <li>Product demos, everyday use, and testimonial-style clips</li>
+              <li>Edited videos ready to post</li>
               <li>Priority monthly production schedule</li>
             </ul>
           </article>

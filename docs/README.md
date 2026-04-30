@@ -2,7 +2,7 @@
 
 This directory is the publishable GitHub Pages site for the UGC portfolio. GitHub Pages should be configured to publish from `docs/`.
 
-The site is intentionally simple: plain HTML, layered CSS, browser JavaScript, local Montserrat font files, SVG assets, images, and videos. There is no build step, package manager, framework, backend, or deploy compilation.
+The site is intentionally simple: plain HTML, layered CSS, browser JavaScript, local font files, SVG assets, images, and videos. There is no build step, package manager, framework, backend, or deploy compilation.
 
 ## Quick Start
 
@@ -43,7 +43,7 @@ Use a local server instead of opening `index.html` directly so relative assets, 
 - `assets/js/contact.js` handles Web3Forms contact-form submission and inline status messages.
 - `assets/js/main.js` is the small bootstrap file.
 - `assets/svgs/` contains the SVG assets used by the page.
-- `assets/fonts/` contains local Montserrat font files.
+- `assets/fonts/` contains local Montserrat and Lora font files.
 - `assets/images/` contains page imagery and reel posters.
 - `assets/videos/` contains the portfolio reels.
 - `.nojekyll`, `CNAME`, `robots.txt`, and `sitemap.xml` support GitHub Pages deployment.
@@ -97,34 +97,9 @@ Use the split CSS layers instead of adding one-off rules to `index.html`.
 
 Prefer existing classes and section patterns. Use `text-wrap: balance` for short display copy where it improves line breaks, but avoid it for dense lists or long form-field labels.
 
-## Color Testing
+## Color And Typography
 
-The default palette is defined in `assets/css/base.css` as root CSS variables. `colors=0` is the default palette, and `colors=1` through `colors=5` are close variations for refining the current pink/editorial direction.
-
-```text
-http://127.0.0.1:4173/?colors=0
-http://127.0.0.1:4173/?colors=1
-http://127.0.0.1:4173/?colors=2
-http://127.0.0.1:4173/?colors=3
-http://127.0.0.1:4173/?colors=4
-http://127.0.0.1:4173/?colors=5
-```
-
-`index.html` reads the `colors` query parameter early and sets `html[data-theme]` before the stylesheet loads. Keep component and section CSS pointed at variables instead of hardcoded colors so new palettes can be tested by changing only the color tokens in `base.css`.
-
-## Font Testing
-
-The default font pairing is Lora headings with Montserrat body/UI. `fonts=0` and no `fonts` parameter both use that default. `fonts=2` through `fonts=5` are alternate editorial options built around serif headings and readable sans-serif UI/body text.
-
-```text
-http://127.0.0.1:4173/?fonts=0
-http://127.0.0.1:4173/?fonts=2
-http://127.0.0.1:4173/?fonts=3
-http://127.0.0.1:4173/?fonts=4
-http://127.0.0.1:4173/?fonts=5
-```
-
-Font choices are defined in `assets/css/base.css` with `--font-body`, `--font-heading`, `--font-ui`, and `--font-heading-weight` tokens. `index.html` reads the `fonts` query parameter early and sets `html[data-fonts]` before the stylesheet loads. Keep font-family usage routed through these tokens instead of hardcoding families in section or component CSS.
+The palette and font choices are fixed in `assets/css/base.css` as CSS variables. The current direction uses a bright pink accent, Lora headings, and Montserrat body/UI text. Keep component and section CSS pointed at variables instead of hardcoding repeated color or font values.
 
 ## JavaScript Conventions
 

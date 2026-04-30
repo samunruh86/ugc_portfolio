@@ -49,17 +49,11 @@ Important UI constraints:
 - Keep text from overlapping or overflowing on mobile.
 - Use icons/SVGs for compact controls where appropriate.
 
-## Color Testing
+## Color And Typography
 
-The site supports palette testing with `?colors=0` through `?colors=5`. `colors=0` is the default palette. Color values live in `docs/assets/css/base.css` and are selected by `html[data-theme]` from the early script in `docs/index.html`.
+Color values and font choices live in `docs/assets/css/base.css` as CSS variables. The site currently uses a bright pink accent, Lora headings, and Montserrat body/UI text.
 
-When changing colors, keep component and section CSS using variables instead of hardcoded color values. Add or adjust theme tokens in `base.css` first, then reference those tokens elsewhere.
-
-## Font Testing
-
-The default font pairing is Lora headings with Montserrat body/UI. The site supports alternate font testing with `?fonts=0` and `?fonts=2` through `?fonts=5`; `fonts=0` and no `fonts` parameter both use the default. Font values live in `docs/assets/css/base.css` as `--font-body`, `--font-heading`, `--font-ui`, and `--font-heading-weight`, and are selected by `html[data-fonts]` from the early script in `docs/index.html`.
-
-When changing typography, keep section and component CSS pointed at font tokens instead of hardcoded font families. Add or adjust `@font-face` declarations and token overrides in `base.css` first.
+When changing colors or typography, keep component and section CSS pointed at variables instead of hardcoding repeated values. Add or adjust root tokens and `@font-face` declarations in `base.css` first, then reference those tokens elsewhere.
 
 ## Motion System
 
