@@ -5,26 +5,30 @@ This directory is the publishable GitHub Pages site for the UGC portfolio. GitHu
 ## What Is Inside
 
 - `index.html` is the single-page portfolio shell.
-- `assets/style.css` contains all layout, responsive styling, visual polish, and animation CSS.
-- `assets/main.js` loads portfolio data, renders repeatable content, handles filters, opens the video modal, and runs scroll/on-load animations.
-- `assets/data/portfolio.json` is the main content source for creator details, brands, videos, services, and process steps.
+- `styleguide.html` is a noindex local reference for tokens, typography, and reusable components.
+- `assets/css/styles.css` imports the active CSS layers.
+- `assets/css/base.css` contains fonts, root tokens, resets, and base typography.
+- `assets/css/layout.css` contains reusable layout primitives such as `.container`, `.section`, and `.section-heading`.
+- `assets/css/components.css` contains reusable UI components such as buttons, contact links, phone frames, cards, process steps, and form fields.
+- `assets/css/sections.css` contains page-section composition for header, hero, work, services, process, contact, and footer.
+- `assets/css/motion.css` contains the `data-ix` reveal animation system.
+- `assets/js/main.js` orchestrates loading, rendering, header state, video playback, and reveal animation through focused modules in `assets/js/`.
+- `assets/data/portfolio.json` is the main content source for creator details, videos, services, and process steps.
 - `assets/images/` contains hero/contact images, texture, favicon, and poster images.
 - `assets/videos/` contains the displayed portfolio reels.
-- `assets/icons/` contains copied reference SVG icons from the SiteLift admin/web assets for future static use.
+- `assets/icons/` contains local SVG icons and the normalized Lucide sprite used by services and process steps.
 - `.nojekyll` tells GitHub Pages to serve files as-is.
 - `CNAME`, `robots.txt`, and `sitemap.xml` are deployment/SEO files.
 
 ## How It Works
 
-The page is intentionally static: there is no build step, framework, package manager, or server-side code. `index.html` loads `assets/style.css` and `assets/main.js`. The JavaScript fetches `assets/data/portfolio.json`, then renders the dynamic sections:
+The page is intentionally static: there is no build step, framework, package manager, or server-side code. `index.html` loads `assets/css/styles.css` and the small scripts in `assets/js/`. The JavaScript fetches `assets/data/portfolio.json`, then renders the dynamic sections:
 
-- hero reel rail
-- category filters
-- featured work cards
-- brand strip
+- layered hero phone image
+- featured work cards, showing fewer initial items on small mobile screens before the "See More Work" reveal
 - services
-- process steps
-- modal video playback
+- process steps, capped at four items
+- inline phone-frame video playback: muted preview on hover, audio playback toggled on click
 
 Because the content is loaded with `fetch()`, view the site through a local web server instead of opening `index.html` directly from Finder.
 
@@ -44,21 +48,33 @@ http://127.0.0.1:4173/
 
 Most content changes should happen in `assets/data/portfolio.json`.
 
+## Structure
+
+The portfolio now follows the same broad organization as the SiteLift static site:
+
+- root tokens live in `assets/css/base.css`
+- page spacing uses `.container`, `.section`, `.section-heading`, and tokenized spacing values
+- reusable UI is styled as components, not one-off section rules
+- section classes use `*-section` names
+- JavaScript uses `data-render` for render targets and `data-action` / `data-video-card` for behavior hooks
+- `styleguide.html` mirrors the active CSS primitives for quick visual checks
+
+Legacy files `assets/style.css`, `assets/themes.css`, and `assets/main.js` are no longer loaded by `index.html`. They are retained for reference until it is safe to remove them.
+
 For each video item, keep these fields aligned:
 
 - `title`: display title
-- `category`: used for filter pills
+- `category`: shown as the card title
 - `brand`: shown as compact metadata
 - `description`: available for richer card copy
 - `video`: path to the `.mp4`
 - `poster`: path to the poster image
-- `sourceUrl`: optional source/reference link
 
 When replacing placeholder media, keep paths stable where possible:
 
 - posters: `assets/images/posters/reel-01.jpg`
 - videos: `assets/videos/reel-01.mp4`
-- hero image: `assets/images/hero.jpg`
+- hero image: `assets/images/hero.jpeg`
 - contact image: `assets/images/contact.jpg`
 
 ## Animation System
@@ -69,8 +85,8 @@ The motion system is adapted from SiteLift’s static site pattern:
 - Elements opt into animation with `data-ix`.
 - `data-ix-load` means animate on page load.
 - `data-ix-stagger` staggers animated children.
-- `assets/main.js` applies reveal classes and IntersectionObserver scroll reveals.
-- `assets/style.css` defines `reveal-ready`, `reveal-in`, `reveal-soft`, `reveal-card`, and reduced-motion behavior.
+- `assets/js/reveal.js` applies reveal classes and IntersectionObserver scroll reveals.
+- `assets/css/motion.css` defines `reveal-ready`, `reveal-in`, `reveal-soft`, `reveal-card`, and reduced-motion behavior.
 
 Keep animations transform/opacity based. Avoid layout-affecting animation.
 
@@ -78,7 +94,7 @@ Keep animations transform/opacity based. Avoid layout-affecting animation.
 
 This site is ready for free GitHub Pages hosting from the `docs/` folder. Before publishing:
 
-1. Replace placeholder name, email, social links, brands, images, posters, and videos.
+1. Replace placeholder name, email, social links, images, posters, and videos.
 2. Update `CNAME` only if using a custom domain.
 3. Update `sitemap.xml` and `robots.txt` if the final public URL changes.
 4. Verify locally at `http://127.0.0.1:4173/`.
@@ -89,7 +105,7 @@ This site is ready for free GitHub Pages hosting from the `docs/` folder. Before
 Recommended checks after edits:
 
 ```sh
-node --check assets/main.js
+node --check assets/js/*.js
 python3 -m http.server 4173
 ```
 
@@ -97,8 +113,7 @@ Then inspect:
 
 - desktop around `1440px`
 - mobile around `390px`
-- filtering behavior
-- video modal open/close
+- phone-frame hover preview and click-to-toggle audio playback
+- mobile "See More Work" reveal
 - footer wrapping
 - no blank sections in full-page screenshots
-

@@ -1,0 +1,8 @@
+- generic [active] [ref=e1] [box=0,0,1440,2477]:
+  - banner [ref=e2] [box=0,0,1440,82]:
+    - navigation "Styleguide navigation" [ref=e3] [box=60,0,1320,82]
+  - main [ref=e11] [box=0,0,1440,2477]:
+    - generic [ref=e14] [box=200,220,521,327]
+    - generic [ref=e22] [box=130,794,1180,410]
+    - generic [ref=e59] [box=130,1376,1180,404]
+    - generic [ref=e71] [box=130,1952,1180,438]

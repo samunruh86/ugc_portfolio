@@ -1,0 +1,17 @@
+- region "Recent UGC Projects" [ref=e51] [box=0,-646,1440,1657]:
+  - generic [ref=e52] [box=130,-562,1180,1485]:
+    - generic [ref=e53] [box=400,-538,640,122]:
+      - paragraph [ref=e54] [box=400,-538,640,17]: Featured Work
+      - heading "Recent UGC Projects" [level=2] [ref=e55] [box=400,-512,640,37]
+      - paragraph [ref=e56] [box=440,-461,560,45]: Product demos, lifestyle clips, testimonials, voiceovers, and family-friendly content made to feel native to TikTok.
+    - generic [ref=e57] [box=310,-394,820,1225]:
+      - article [ref=e198] [box=312,-367,236,380]
+      - article [ref=e205] [box=602,-367,236,380]
+      - article [ref=e212] [box=892,-367,236,380]
+      - article [ref=e219] [box=310,25,240,386]
+      - article [ref=e226] [box=600,25,240,386]
+      - article [ref=e233] [box=890,25,240,386]
+      - article [ref=e240] [box=310,445,240,386]
+      - article [ref=e247] [box=600,445,240,386]
+      - article [ref=e254] [box=890,445,240,386]
+    - button "Show Less" [active] [ref=e261] [cursor=pointer] [box=605,893,230,54]

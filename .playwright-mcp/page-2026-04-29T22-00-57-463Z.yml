@@ -1,0 +1,197 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Creator Name home" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - text: Creator Name
+    - navigation "Primary navigation" [ref=e4]:
+      - link "Work" [ref=e5] [cursor=pointer]:
+        - /url: "#work"
+      - link "Services" [ref=e6] [cursor=pointer]:
+        - /url: "#services"
+      - link "Process" [ref=e7] [cursor=pointer]:
+        - /url: "#process"
+      - link "About" [ref=e8] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=e9] [cursor=pointer]:
+        - /url: "#contact"
+    - link "Let’s Work Together" [ref=e10] [cursor=pointer]:
+      - /url: mailto:hello@example.com
+      - text: Let’s Work Together
+      - img [ref=e11]
+  - main [ref=e13]:
+    - region "Content that connects. Results that convert." [ref=e14]:
+      - img
+      - img
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: UGC Creator
+        - heading "Content that connects. Results that convert." [level=1] [ref=e17]
+        - paragraph [ref=e18]: Authentic photo and video content for brands that need scroll-stopping creative, clear product storytelling, and real-life trust.
+        - generic [ref=e19]:
+          - link "View My Work" [ref=e20] [cursor=pointer]:
+            - /url: "#work"
+            - text: View My Work
+            - img [ref=e21]
+          - link "Work With Me" [ref=e23] [cursor=pointer]:
+            - /url: mailto:hello@example.com
+        - paragraph [ref=e26]: Trusted by lifestyle, beauty, wellness and e-comm brands
+      - generic "Portfolio media preview" [ref=e27]:
+        - figure [ref=e28]:
+          - img "Creator portrait placeholder" [ref=e29]
+        - button "Play Hydration Reminder" [ref=e30] [cursor=pointer]
+    - region "Recent UGC Projects" [ref=e33]:
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: Featured Work
+        - heading "Recent UGC Projects" [level=2] [ref=e36]
+        - paragraph [ref=e37]: A mix of product demos, lifestyle clips, testimonials, and voiceovers created for social-first campaigns.
+      - generic "Filter videos" [ref=e38]:
+        - button "All Work" [ref=e39] [cursor=pointer]
+        - button "Product Demo" [ref=e40] [cursor=pointer]
+        - button "Unboxing" [ref=e41] [cursor=pointer]
+        - button "Lifestyle" [ref=e42] [cursor=pointer]
+        - button "Raw Footage" [ref=e43] [cursor=pointer]
+        - button "Testimonial" [ref=e44] [cursor=pointer]
+        - button "Voiceover" [ref=e45] [cursor=pointer]
+        - button "Organic Social" [ref=e46] [cursor=pointer]
+      - generic [ref=e47]:
+        - article [ref=e48]:
+          - button "Play Hydration Reminder" [ref=e49] [cursor=pointer]:
+            - img "Hydration Reminder video poster" [ref=e50]
+          - generic [ref=e52]:
+            - paragraph [ref=e53]: Delta Baby / Product Demo
+            - heading "Hydration Reminder" [level=3] [ref=e54]
+        - article [ref=e55]:
+          - button "Play PR Unboxing" [ref=e56] [cursor=pointer]:
+            - img "PR Unboxing video poster" [ref=e57]
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: Ayla & Co / Unboxing
+            - heading "PR Unboxing" [level=3] [ref=e61]
+        - article [ref=e62]:
+          - button "Play Cozy Home Finds" [ref=e63] [cursor=pointer]:
+            - img "Cozy Home Finds video poster" [ref=e64]
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: Blissy / Lifestyle
+            - heading "Cozy Home Finds" [level=3] [ref=e68]
+        - article [ref=e69]:
+          - button "Play Morning Routine" [ref=e70] [cursor=pointer]:
+            - img "Morning Routine video poster" [ref=e71]
+          - generic [ref=e73]:
+            - paragraph [ref=e74]: Raw Footage / Raw Footage
+            - heading "Morning Routine" [level=3] [ref=e75]
+        - article [ref=e76]:
+          - button "Play Glow Ritual Cleanser" [ref=e77] [cursor=pointer]:
+            - img "Glow Ritual Cleanser video poster" [ref=e78]
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: One Take / Testimonial
+            - heading "Glow Ritual Cleanser" [level=3] [ref=e82]
+        - article [ref=e83]:
+          - button "Play Recipe Voiceover" [ref=e84] [cursor=pointer]:
+            - img "Recipe Voiceover video poster" [ref=e85]
+          - generic [ref=e87]:
+            - paragraph [ref=e88]: Just Ingredients / Voiceover
+            - heading "Recipe Voiceover" [level=3] [ref=e89]
+      - button "View More Work" [ref=e90] [cursor=pointer]
+    - region "What I Create" [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - paragraph [ref=e94]: Services
+          - heading "What I Create" [level=2] [ref=e95]
+          - paragraph [ref=e96]: High-quality UGC built to feel native to social platforms while giving brands clear, usable creative for testing and scaling.
+        - generic [ref=e97]:
+          - article [ref=e98]:
+            - img [ref=e100]
+            - heading "Product Demo" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Clear, benefit-led videos that show how the product fits into real routines.
+          - article [ref=e105]:
+            - img [ref=e107]
+            - heading "Unboxing" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Natural first impressions, package reveals, and product details with social-first pacing.
+          - article [ref=e113]:
+            - img [ref=e115]
+            - heading "Lifestyle Content" [level=3] [ref=e119]
+            - paragraph [ref=e120]: Real-life scenes that make the product feel useful, approachable, and easy to remember.
+          - article [ref=e121]:
+            - img [ref=e123]
+            - heading "Voiceover" [level=3] [ref=e124]
+            - paragraph [ref=e125]: Narrated product stories that explain benefits with clarity, warmth, and a strong hook.
+          - article [ref=e126]:
+            - img [ref=e128]
+            - heading "Testimonial" [level=3] [ref=e130]
+            - paragraph [ref=e131]: Founder-style and customer-style proof points that build trust and move viewers to act.
+    - region "Brands I’ve created for" [ref=e132]:
+      - heading "Brands I’ve created for" [level=2] [ref=e133]
+      - generic [ref=e134]:
+        - generic [ref=e135]: OLAY
+        - generic [ref=e136]: e.l.f.
+        - generic [ref=e137]: La Roche-Posay
+        - generic [ref=e138]: Nespresso
+        - generic [ref=e139]: Daisy
+        - generic [ref=e140]: Native
+    - region "My Process" [ref=e141]:
+      - generic [ref=e142]:
+        - paragraph [ref=e143]: Simple Process
+        - heading "My Process" [level=2] [ref=e144]
+      - list [ref=e145]:
+        - listitem [ref=e146]:
+          - generic [ref=e147]: "1"
+          - img [ref=e149]
+          - heading "Inquiry" [level=3] [ref=e152]
+          - paragraph [ref=e153]: You share your campaign goals, product details, and creative needs.
+        - listitem [ref=e154]:
+          - generic [ref=e155]: "2"
+          - img [ref=e157]
+          - heading "Strategy Call" [level=3] [ref=e159]
+          - paragraph [ref=e160]: We align on audience, hooks, deliverables, and timeline.
+        - listitem [ref=e161]:
+          - generic [ref=e162]: "3"
+          - img [ref=e164]
+          - heading "Create" [level=3] [ref=e168]
+          - paragraph [ref=e169]: I film native-style content built around your brief.
+        - listitem [ref=e170]:
+          - generic [ref=e171]: "4"
+          - img [ref=e173]
+          - heading "Deliver" [level=3] [ref=e176]
+          - paragraph [ref=e177]: You receive ready-to-post assets on schedule.
+        - listitem [ref=e178]:
+          - generic [ref=e179]: "5"
+          - img [ref=e181]
+          - heading "Results" [level=3] [ref=e183]
+          - paragraph [ref=e184]: Content designed to build trust, explain the product, and drive action.
+    - region "Let’s create content your audience will trust." [ref=e185]:
+      - generic [ref=e187]:
+        - paragraph [ref=e188]: Now Booking
+        - heading "Let’s create content your audience will trust." [level=2] [ref=e189]
+        - paragraph [ref=e190]: Send the product, campaign goal, timeline, and deliverables. I’ll reply with availability and next steps.
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - textbox "Your name" [ref=e193]:
+              - /placeholder: Your Name
+            - textbox "Email address" [ref=e194]:
+              - /placeholder: Email Address
+          - textbox "Project details" [ref=e195]:
+            - /placeholder: Tell me about your project...
+          - generic [ref=e196]:
+            - button "Send Inquiry" [ref=e197] [cursor=pointer]
+            - paragraph [ref=e198]: "Typical reply time: 1–2 business days."
+  - contentinfo [ref=e199]:
+    - paragraph [ref=e200]: Creator Name
+    - navigation "Footer navigation" [ref=e201]:
+      - link "Work" [ref=e202] [cursor=pointer]:
+        - /url: "#work"
+      - link "Services" [ref=e203] [cursor=pointer]:
+        - /url: "#services"
+      - link "Process" [ref=e204] [cursor=pointer]:
+        - /url: "#process"
+      - link "About" [ref=e205] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=e206] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e207]:
+      - link "TikTok" [ref=e208] [cursor=pointer]:
+        - /url: https://www.instagram.com/heyhillandhazel/
+        - text: ♪
+      - link "Instagram" [ref=e209] [cursor=pointer]:
+        - /url: "#"
+        - text: ◎
+      - link "Email" [ref=e210] [cursor=pointer]:
+        - /url: mailto:hello@example.com
+        - text: ✉

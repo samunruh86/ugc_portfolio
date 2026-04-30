@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Hayley Portfolio | Styleguide</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260430a">
+  <style>
+    .styleguide-swatch {
+      min-height: 96px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--color-surface);
+    }
+
+    .styleguide-swatch__color {
+      min-height: 54px;
+    }
+
+    .styleguide-swatch__body {
+      display: grid;
+      gap: 2px;
+      padding: 12px;
+      font-size: 12px;
+    }
+
+    .styleguide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--space-16);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container container--wide" aria-label="Styleguide navigation">
+      <a class="brand" href="/">Hayley</a>
+      <div class="nav-links">
+        <a href="#colors">Colors</a>
+        <a href="#type">Type</a>
+        <a href="#components">Components</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="/">Back to Site</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-section__copy">
+          <p class="eyebrow hero-section__eyebrow">Styleguide</p>
+          <h1>Portfolio design system.</h1>
+          <p class="lead hero-section__lead">A compact reference for the active tokens, typography, buttons, cards, and form controls.</p>
+          <div class="hero-section__actions">
+            <a class="btn btn-primary" href="#components">View Components</a>
+            <a class="btn btn-secondary" href="/">Open Site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="colors">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Palette</p>
+          <h2>Core colors</h2>
+          <p class="section-heading__copy">Swatches are powered by the same root variables used by the production page.</p>
+        </div>
+        <div class="styleguide-grid" style="margin-top: var(--space-36);">
+          <article class="styleguide-swatch">
+            <div class="styleguide-swatch__color" style="background: var(--color-text);"></div>
+            <div class="styleguide-swatch__body"><strong>Text</strong><span>--color-text</span></div>
+          </article>
+          <article class="styleguide-swatch">
+            <div class="styleguide-swatch__color" style="background: var(--color-muted);"></div>
+            <div class="styleguide-swatch__body"><strong>Muted</strong><span>--color-muted</span></div>
+          </article>
+          <article class="styleguide-swatch">
+            <div class="styleguide-swatch__color" style="background: var(--color-accent);"></div>
+            <div class="styleguide-swatch__body"><strong>Accent</strong><span>--color-accent</span></div>
+          </article>
+          <article class="styleguide-swatch">
+            <div class="styleguide-swatch__color" style="background: var(--color-inverse);"></div>
+            <div class="styleguide-swatch__body"><strong>Inverse</strong><span>--color-inverse</span></div>
+          </article>
+          <article class="styleguide-swatch">
+            <div class="styleguide-swatch__color" style="background: var(--color-panel);"></div>
+            <div class="styleguide-swatch__body"><strong>Panel</strong><span>--color-panel</span></div>
+          </article>
+          <article class="styleguide-swatch">
+            <div class="styleguide-swatch__color" style="background: var(--color-surface);"></div>
+            <div class="styleguide-swatch__body"><strong>Surface</strong><span>--color-surface</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="type">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Typography</p>
+          <h2>Heading scale</h2>
+          <p class="section-heading__copy">Montserrat is the production font for body and headings.</p>
+        </div>
+        <div style="display: grid; gap: var(--space-24); margin-top: var(--space-36);">
+          <h1>H1 Content that feels real.</h1>
+          <h2>H2 Recent UGC Projects</h2>
+          <h3>H3 Product Demo</h3>
+          <p class="lead">Lead copy for hero and major supporting text.</p>
+          <p>Default body text for compact paragraphs, helper copy, and forms.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="components">
+      <div class="container services-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Components</p>
+          <h2>Buttons and cards</h2>
+          <p class="section-heading__copy">Reusable primitives used across the site.</p>
+        </div>
+        <div class="hero-section__actions">
+          <a class="btn btn-primary" href="#">Primary Button</a>
+          <a class="btn btn-secondary" href="#">Secondary Button</a>
+        </div>
+        <div class="icon-card-grid">
+          <article class="icon-card">
+            <span class="icon-card__icon" aria-hidden="true">
+              <svg class="portfolio-icon" viewBox="0 0 24 24"><use href="assets/icons/portfolio-icons.svg#icon-smartphone"></use></svg>
+            </span>
+            <h3>Icon Card</h3>
+            <p>Reusable service-style card with icon, heading, and compact body copy.</p>
+          </article>
+          <article class="icon-card">
+            <span class="icon-card__icon" aria-hidden="true">
+              <svg class="portfolio-icon" viewBox="0 0 24 24"><use href="assets/icons/portfolio-icons.svg#icon-package-open"></use></svg>
+            </span>
+            <h3>Service Card</h3>
+            <p>Same component, different content and icon.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,184 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Hayley home" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - text: Hayley
+    - navigation "Primary navigation" [ref=e4]:
+      - link "Work" [ref=e5] [cursor=pointer]:
+        - /url: "#work"
+      - link "Services" [ref=e6] [cursor=pointer]:
+        - /url: "#services"
+      - link "Process" [ref=e7] [cursor=pointer]:
+        - /url: "#process"
+      - link "Contact" [ref=e8] [cursor=pointer]:
+        - /url: "#contact"
+    - link "Let’s Work Together" [ref=e9] [cursor=pointer]:
+      - /url: mailto:hello@example.com
+      - text: Let’s Work Together
+      - img [ref=e10]
+  - main [ref=e12]:
+    - region "Content that feels real. Content that sells." [ref=e13]:
+      - img
+      - img
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: UGC Creator
+        - heading "Content that feels real. Content that sells." [level=1] [ref=e16]
+        - paragraph [ref=e17]: Authentic TikTok-style content for lifestyle, family, food, beauty, and everyday products. Hayley creates real-life videos that stop the scroll, build trust, and help people take action.
+        - generic [ref=e18]:
+          - link "View My Work" [ref=e19] [cursor=pointer]:
+            - /url: "#work"
+            - text: View My Work
+            - img [ref=e20]
+          - link "Work With Me" [ref=e22] [cursor=pointer]:
+            - /url: mailto:hello@example.com
+        - generic [ref=e23]:
+          - link "Email hello@example.com" [ref=e24] [cursor=pointer]:
+            - /url: mailto:hello@example.com
+            - img [ref=e26]
+            - generic [ref=e28]:
+              - generic [ref=e29]: Email
+              - generic [ref=e30]: hello@example.com
+          - link "TikTok @heyhillandhazel" [ref=e31] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@heyhillandhazel
+            - img [ref=e33]
+            - generic [ref=e35]:
+              - generic [ref=e36]: TikTok
+              - generic [ref=e37]: "@heyhillandhazel"
+          - link "Instagram @heyhillandhazel" [ref=e38] [cursor=pointer]:
+            - /url: https://www.instagram.com/heyhillandhazel/
+            - img [ref=e40]
+            - generic [ref=e42]:
+              - generic [ref=e43]: Instagram
+              - generic [ref=e44]: "@heyhillandhazel"
+      - generic "Portfolio media preview" [ref=e45]:
+        - figure "Creator photo in phone frame" [ref=e47]
+    - region "Recent UGC Projects" [ref=e48]:
+      - generic [ref=e49]:
+        - paragraph [ref=e50]: Featured Work
+        - heading "Recent UGC Projects" [level=2] [ref=e51]
+        - paragraph [ref=e52]: Product demos, lifestyle clips, testimonials, voiceovers, and family-friendly content made to feel native to TikTok.
+      - generic [ref=e53]:
+        - article [ref=e54]:
+          - button "Play Hydration Reminder" [ref=e55] [cursor=pointer]
+          - generic [ref=e58]:
+            - paragraph [ref=e59]: Delta Baby
+            - heading "Product Demo" [level=3] [ref=e60]
+        - article [ref=e61]:
+          - button "Play PR Unboxing" [ref=e62] [cursor=pointer]
+          - generic [ref=e65]:
+            - paragraph [ref=e66]: Ayla & Co
+            - heading "Unboxing" [level=3] [ref=e67]
+        - article [ref=e68]:
+          - button "Play Cozy Home Finds" [ref=e69] [cursor=pointer]
+          - generic [ref=e72]:
+            - paragraph [ref=e73]: Blissy
+            - heading "Lifestyle" [level=3] [ref=e74]
+        - article [ref=e75]:
+          - button "Play Morning Routine" [ref=e76] [cursor=pointer]
+          - generic [ref=e79]:
+            - paragraph [ref=e80]: Raw Footage
+            - heading "Raw Footage" [level=3] [ref=e81]
+        - article [ref=e82]:
+          - button "Play Glow Ritual Cleanser" [ref=e83] [cursor=pointer]
+          - generic [ref=e86]:
+            - paragraph [ref=e87]: One Take
+            - heading "Testimonial" [level=3] [ref=e88]
+        - article [ref=e89]:
+          - button "Play Recipe Voiceover" [ref=e90] [cursor=pointer]
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: Just Ingredients
+            - heading "Voiceover" [level=3] [ref=e95]
+      - button "See More Work" [ref=e96] [cursor=pointer]
+    - region "What I Create" [ref=e97]:
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - paragraph [ref=e100]: Services
+          - heading "What I Create" [level=2] [ref=e101]
+          - paragraph [ref=e102]: Real-life content that helps your product feel useful, trustworthy, and easy to buy.
+        - generic [ref=e103]:
+          - article [ref=e104]:
+            - img [ref=e106]
+            - heading "Product Demo" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Show the product in real life, with a clear use case and simple reasons people should care.
+          - article [ref=e110]:
+            - img [ref=e112]
+            - heading "Unboxing" [level=3] [ref=e114]
+            - paragraph [ref=e115]: Make first impressions feel genuine while highlighting what matters most about the product.
+          - article [ref=e116]:
+            - img [ref=e118]
+            - heading "Lifestyle Content" [level=3] [ref=e120]
+            - paragraph [ref=e121]: Place your product inside everyday family, food, beauty, or home moments people relate to.
+          - article [ref=e122]:
+            - img [ref=e124]
+            - heading "Voiceover" [level=3] [ref=e126]
+            - paragraph [ref=e127]: Use natural narration to explain benefits, handle objections, and keep the video moving.
+          - article [ref=e128]:
+            - img [ref=e130]
+            - heading "Testimonial" [level=3] [ref=e132]
+            - paragraph [ref=e133]: Create honest, direct-to-camera content that builds trust and gives viewers a reason to act.
+    - region "My Process" [ref=e134]:
+      - generic [ref=e135]:
+        - paragraph [ref=e136]: Simple Process
+        - heading "My Process" [level=2] [ref=e137]
+      - list [ref=e138]:
+        - listitem [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e141]: "01"
+            - img [ref=e142]
+          - heading "Inquiry" [level=3] [ref=e144]
+          - paragraph [ref=e145]: Send the product, goal, timeline, and deliverables so everything is clear from the start.
+        - listitem [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]: "02"
+            - img [ref=e149]
+          - heading "Strategy Call" [level=3] [ref=e151]
+          - paragraph [ref=e152]: Hayley confirms the audience, key message, hook ideas, and what success should look like.
+        - listitem [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]: "03"
+            - img [ref=e156]
+          - heading "Create" [level=3] [ref=e158]
+          - paragraph [ref=e159]: She films content that feels native to TikTok while still keeping your brand goal in focus.
+        - listitem [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]: "04"
+            - img [ref=e163]
+          - heading "Deliver" [level=3] [ref=e165]
+          - paragraph [ref=e166]: You get clear, ready-to-use assets on schedule, with communication throughout the process.
+    - region "Let’s create content your audience will trust." [ref=e167]:
+      - generic [ref=e169]:
+        - paragraph [ref=e170]: Now Booking
+        - heading "Let’s create content your audience will trust." [level=2] [ref=e171]
+        - paragraph [ref=e172]: Share your campaign goal, product details, timeline, and deliverables. Hayley will reply with availability, clear next steps, and what she needs to get started.
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - textbox "Your name" [ref=e175]:
+              - /placeholder: Your Name
+            - textbox "Email address" [ref=e176]:
+              - /placeholder: Email Address
+          - textbox "Project details" [ref=e177]:
+            - /placeholder: Tell me about your project...
+          - generic [ref=e178]:
+            - button "Send Inquiry" [ref=e179] [cursor=pointer]
+            - paragraph [ref=e180]: "Typical response time: 1–2 business days."
+  - contentinfo [ref=e181]:
+    - paragraph [ref=e182]: Hayley
+    - navigation "Footer navigation" [ref=e183]:
+      - link "Work" [ref=e184] [cursor=pointer]:
+        - /url: "#work"
+      - link "Services" [ref=e185] [cursor=pointer]:
+        - /url: "#services"
+      - link "Process" [ref=e186] [cursor=pointer]:
+        - /url: "#process"
+      - link "Contact" [ref=e187] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e188]:
+      - link "TikTok" [ref=e189] [cursor=pointer]:
+        - /url: https://www.tiktok.com/@heyhillandhazel
+        - text: ♪
+      - link "Instagram" [ref=e190] [cursor=pointer]:
+        - /url: https://www.instagram.com/heyhillandhazel/
+        - text: ◎
+      - link "Email" [ref=e191] [cursor=pointer]:
+        - /url: mailto:hello@example.com
+        - text: ✉
