@@ -1,6 +1,17 @@
 (() => {
   const SELECTOR = "[data-reel]";
 
+  const loadVideo = (video) => {
+    if (!video || video.dataset.loaded === "true") return;
+    const src = video.dataset.src;
+    if (!src) return;
+
+    video.src = src;
+    video.preload = navigator.connection?.saveData ? "metadata" : "auto";
+    video.dataset.loaded = "true";
+    video.load();
+  };
+
   const pauseCard = (card, reset = false) => {
     const video = card.querySelector("video");
     if (!video) return;
@@ -29,6 +40,7 @@
     if (!video) return;
 
     pauseSiblings(cards, card);
+    loadVideo(video);
     video.muted = muted;
 
     try {
@@ -74,6 +86,21 @@
         playVideo(card, false, cards);
       });
     });
+
+    if (!("IntersectionObserver" in window)) {
+      cards.forEach((card) => loadVideo(card.querySelector("video")));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        loadVideo(entry.target.querySelector("video"));
+        obs.unobserve(entry.target);
+      });
+    }, { rootMargin: "700px 0px", threshold: 0.01 });
+
+    cards.forEach((card) => observer.observe(card));
   };
 
   window.InfluencerReels = { init };

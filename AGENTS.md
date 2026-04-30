@@ -5,7 +5,6 @@ This project is a static GitHub Pages UGC portfolio. Keep it simple, fast, and e
 ## Scope
 
 - Publishable site lives in `docs/`.
-- Previous site snapshot lives in `docs_v1/`.
 - There is no build system, package manager, framework, or backend.
 - Do not add dependencies or introduce a build step unless explicitly requested.
 - Prefer editing `docs/index.html` for content changes in the current static page.
@@ -36,8 +35,8 @@ If port `4173` is already in use, check whether the existing server is serving t
 The intended visual direction is:
 
 - calm, polished UGC portfolio aesthetic
-- closer to the already-built site than the loud Webflow influencer template
-- borrow from Webflow/SiteLift only for clean spacing, motion, SVG quality, interaction polish, and layout discipline
+- clean content-creator portfolio feel with strong brand-facing copy
+- borrow from the imported template only for clean spacing, motion, SVG quality, interaction polish, and layout discipline
 - avoid decorative clutter, oversized marketing sections, and one-note palettes
 - preserve the content-creator portfolio direction, polished motion, phone-frame video cards, clear packages, and editorial UGC feel
 
@@ -84,9 +83,8 @@ Expected media paths:
 - hero: `docs/assets/images/image-home-hero-hayley-p-1200.jpeg`
 - posters: `docs/assets/images/posters/reel-XX.jpg`
 - public videos: `docs/assets/videos/reel-XX.mp4`
-- raw videos: `docs/assets/videos/raw-XX.mp4`
 
-`raw-*.mp4` files are intentionally ignored in `.gitignore`. Do not delete or rewrite media unless the user asks.
+Reel videos should keep poster images visible immediately and lazy-load MP4 files through `data-src` in `index.html` plus `docs/assets/js/reels.js`. Do not delete or rewrite media unless the user asks.
 
 ## Validation Expectations
 
@@ -107,6 +105,8 @@ For visual changes, inspect with Playwright or the in-app browser:
 - contact/footer on mobile
 
 Report any validation not run.
+
+For copy-only changes, keep edits scoped to the relevant text and do not run Playwright unless explicitly requested.
 
 ## Change Discipline
 

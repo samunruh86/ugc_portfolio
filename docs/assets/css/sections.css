@@ -327,6 +327,7 @@
   color: var(--neutral-700);
   font-size: 28px;
   line-height: 1.15;
+  text-wrap: balance;
 }
 
 .reel-card:hover .reel-phone,
@@ -410,6 +411,7 @@
 .about-copy p {
   max-width: 560px;
   margin: 24px 0 34px;
+  text-wrap: balance;
 }
 
 .package-grid {
@@ -516,6 +518,7 @@
 .package-copy {
   margin-top: 18px;
   color: var(--neutral-500);
+  text-wrap: balance;
 }
 
 .package-list {
@@ -574,6 +577,7 @@
 .faq-intro p {
   max-width: 640px;
   margin: 18px auto 34px;
+  text-wrap: balance;
 }
 
 .contact-email {
@@ -787,6 +791,7 @@
 
 .faq-item p {
   max-width: 760px;
+  text-wrap: balance;
 }
 
 .site-footer {
@@ -817,6 +822,7 @@
 .footer-top p {
   max-width: 440px;
   margin-top: 18px;
+  text-wrap: balance;
 }
 
 .footer-social {
