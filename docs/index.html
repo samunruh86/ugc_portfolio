@@ -263,15 +263,19 @@
         </a>
       </div>
       <div class="container contact-form-wrap">
-        <form class="contact-card" data-ix="scale-in" action="#" method="get">
+        <form class="contact-card" data-contact-form data-ix="scale-in" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f4a11bba-2991-494b-805d-edab41638ede">
+          <input type="hidden" name="subject" value="New Fun Favorite Finds inquiry">
+          <input type="checkbox" name="botcheck" class="contact-botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
           <h2>Send a message</h2>
           <div class="contact-fields">
             <label>Full Name*<input type="text" name="name" placeholder="Your name" required></label>
             <label>Brand*<input type="text" name="brand" placeholder="Brand name" required></label>
             <label>Email*<input type="email" name="email" placeholder="Your email" required></label>
-            <label>Your Message<textarea name="message" placeholder="Tell me about your product, goals, and timeline..."></textarea></label>
+            <label>Your Message*<textarea name="message" placeholder="Tell me about your product, goals, and timeline..." required></textarea></label>
           </div>
-          <button class="button button-primary" type="submit">Send Inquiry</button>
+          <p class="contact-status" data-contact-status role="status" aria-live="polite"></p>
+          <button class="button button-primary" type="submit" data-sending-text="Sending...">Send Inquiry</button>
         </form>
       </div>
     </section>
@@ -300,6 +304,7 @@
   <script src="assets/js/reveal.js"></script>
   <script src="assets/js/stats.js"></script>
   <script src="assets/js/reels.js"></script>
+  <script src="assets/js/contact.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

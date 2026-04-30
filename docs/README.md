@@ -40,6 +40,7 @@ Use a local server instead of opening `index.html` directly so relative assets, 
 - `assets/js/reveal.js` handles load and scroll reveal animation.
 - `assets/js/stats.js` handles achievement count-up animation.
 - `assets/js/reels.js` handles reel lazy-loading, mobile "View More", hover preview, and click-to-play behavior.
+- `assets/js/contact.js` handles Web3Forms contact-form submission and inline status messages.
 - `assets/js/main.js` is the small bootstrap file.
 - `assets/svgs/` contains the SVG assets used by the page.
 - `assets/fonts/` contains local Montserrat font files.
@@ -64,6 +65,14 @@ Current sections:
 - footer
 
 For copy-only changes, replace existing text without adding new elements unless the requested change needs a structure update.
+
+## Contact Form
+
+The contact form posts directly to Web3Forms from the static GitHub Pages site. There is no local backend. The Web3Forms access key lives in the hidden `access_key` input in `index.html`.
+
+If the recipient email or Web3Forms account changes, create a new Web3Forms access key, replace the hidden `access_key` value in `index.html`, and test from the local preview URL or the deployed GitHub Pages URL.
+
+The form uses `assets/js/contact.js` to submit with `fetch()`, keep visitors on the page, disable the button while sending, and show an inline success or error message. If the placeholder access key is still present, the form shows a setup message instead of submitting. The hidden `botcheck` checkbox is the Web3Forms honeypot field.
 
 ## Media And Videos
 
@@ -126,7 +135,8 @@ Scripts are loaded directly by `index.html` in dependency order:
 3. `assets/js/reveal.js`
 4. `assets/js/stats.js`
 5. `assets/js/reels.js`
-6. `assets/js/main.js`
+6. `assets/js/contact.js`
+7. `assets/js/main.js`
 
 Keep behavior in the relevant behavior module and bootstrapping in `main.js`. Do not add a build system or dependencies for simple static-site behavior.
 

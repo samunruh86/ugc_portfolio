@@ -4,4 +4,5 @@
   window.InfluencerReveal?.init();
   window.InfluencerStats?.init();
   window.InfluencerReels?.init();
+  window.InfluencerContact?.init();
 })();

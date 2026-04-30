@@ -697,6 +697,36 @@
   font-weight: 500;
 }
 
+.contact-botcheck {
+  position: absolute;
+  left: -100vw;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-status {
+  min-height: 1.4em;
+  margin: -8px 0 24px;
+  color: var(--neutral-500);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.contact-status:empty {
+  display: none;
+}
+
+.contact-status[data-state="success"] {
+  color: var(--primary-1);
+}
+
+.contact-status[data-state="error"] {
+  color: var(--neutral-700);
+}
+
 .contact-card .button {
   align-self: flex-start;
 }
