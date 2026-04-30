@@ -18,6 +18,14 @@
         if (params.get("captureStatic") === "true") {
           document.documentElement.dataset.captureStatic = "true";
         }
+        const colors = params.get("colors");
+        if (/^[0-5]$/.test(colors || "")) {
+          document.documentElement.dataset.theme = colors;
+        }
+        const fonts = params.get("fonts");
+        if (/^[0-5]$/.test(fonts || "")) {
+          document.documentElement.dataset.fonts = fonts;
+        }
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
           document.documentElement.classList.add("ix-ready");
         }
@@ -39,11 +47,6 @@
         </svg>
         <span class="brand-word">Fun Favorite Finds</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
       <nav class="nav-menu" aria-label="Primary navigation" data-nav-menu>
         <a href="#videos">Videos</a>
         <a href="#about">About Me</a>
@@ -65,8 +68,8 @@
           <div class="button-row">
             <a class="button button-primary" href="#contact">Let's Work Together <span class="button-plus" aria-hidden="true">+</span></a>
             <div class="hero-social" aria-label="Social media links">
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/svgs/icon-social-media-journey-03-influencer.svg" alt=""></a>
-              <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/svgs/icon-social-media-journey-06-influencer.svg" alt=""></a>
+              <a href="https://www.tiktok.com/@funfavoritefinds" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/svgs/icon-social-media-journey-06-influencer.svg" alt=""></a>
+              <a href="https://www.instagram.com/fun_favorite_finds" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/svgs/icon-social-media-journey-03-influencer.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -119,30 +122,35 @@
             <p>Blisssy</p>
             <h3>Everyday Use</h3>
           </article>
-          <article class="reel-card" data-reel>
-            <button class="reel-phone" type="button" aria-label="Play everyday favorite video">
-              <video preload="none" playsinline muted loop poster="assets/images/posters/reel-04.jpg" data-src="assets/videos/reel-04.mp4"></video>
-              <span class="reel-play" aria-hidden="true"></span>
-            </button>
-            <p>Favorite Find</p>
-            <h3>Real-Life Demo</h3>
-          </article>
-          <article class="reel-card" data-reel>
-            <button class="reel-phone" type="button" aria-label="Play home product video">
-              <video preload="none" playsinline muted loop poster="assets/images/posters/reel-05.jpg" data-src="assets/videos/reel-05.mp4"></video>
-              <span class="reel-play" aria-hidden="true"></span>
-            </button>
-            <p>Home Pick</p>
-            <h3>Quick Review</h3>
-          </article>
-          <article class="reel-card" data-reel>
-            <button class="reel-phone" type="button" aria-label="Play family favorite video">
-              <video preload="none" playsinline muted loop poster="assets/images/posters/reel-06.jpg" data-src="assets/videos/reel-06.mp4"></video>
-              <span class="reel-play" aria-hidden="true"></span>
-            </button>
-            <p>Family Favorite</p>
-            <h3>Short-Form Video</h3>
-          </article>
+          <div class="reels-more-wrap">
+            <button class="button button-secondary reels-more-button" type="button" aria-expanded="false" data-reels-toggle>View More</button>
+          </div>
+          <div class="reels-extra" data-reels-extra>
+            <article class="reel-card" data-reel>
+              <button class="reel-phone" type="button" aria-label="Play everyday favorite video">
+                <video preload="none" playsinline muted loop poster="assets/images/posters/reel-04.jpg" data-src="assets/videos/reel-04.mp4"></video>
+                <span class="reel-play" aria-hidden="true"></span>
+              </button>
+              <p>Favorite Find</p>
+              <h3>Real-Life Demo</h3>
+            </article>
+            <article class="reel-card" data-reel>
+              <button class="reel-phone" type="button" aria-label="Play home product video">
+                <video preload="none" playsinline muted loop poster="assets/images/posters/reel-05.jpg" data-src="assets/videos/reel-05.mp4"></video>
+                <span class="reel-play" aria-hidden="true"></span>
+              </button>
+              <p>Home Pick</p>
+              <h3>Quick Review</h3>
+            </article>
+            <article class="reel-card" data-reel>
+              <button class="reel-phone" type="button" aria-label="Play family favorite video">
+                <video preload="none" playsinline muted loop poster="assets/images/posters/reel-06.jpg" data-src="assets/videos/reel-06.mp4"></video>
+                <span class="reel-play" aria-hidden="true"></span>
+              </button>
+              <p>Family Favorite</p>
+              <h3>Short-Form Video</h3>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -259,8 +267,8 @@
           <h2>Send a message</h2>
           <div class="contact-fields">
             <label>Full Name*<input type="text" name="name" placeholder="Your name" required></label>
+            <label>Brand*<input type="text" name="brand" placeholder="Brand name" required></label>
             <label>Email*<input type="email" name="email" placeholder="Your email" required></label>
-            <label>Subject*<input type="text" name="subject" placeholder="Subject" required></label>
             <label>Your Message<textarea name="message" placeholder="Tell me about your product, goals, and timeline..."></textarea></label>
           </div>
           <button class="button button-primary" type="submit">Send Inquiry</button>
@@ -280,8 +288,8 @@
       <div class="footer-bottom">
         <div class="small-print">Copyright © 2026 | Fun Favorite Finds</div>
         <div class="footer-social">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/svgs/icon-social-media-journey-03-influencer.svg" alt=""></a>
-          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/svgs/icon-social-media-journey-06-influencer.svg" alt=""></a>
+          <a href="https://www.tiktok.com/@funfavoritefinds" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/svgs/icon-social-media-journey-06-influencer.svg" alt=""></a>
+          <a href="https://www.instagram.com/fun_favorite_finds" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/svgs/icon-social-media-journey-03-influencer.svg" alt=""></a>
         </div>
       </div>
     </div>

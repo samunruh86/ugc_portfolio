@@ -18,19 +18,19 @@
 .button-primary {
   color: var(--white);
   background: var(--primary-1);
-  box-shadow: 0 16px 34px rgba(251, 15, 90, 0.25);
+  box-shadow: var(--shadow-button);
 }
 
 .button-primary:hover {
   color: var(--white);
   background: var(--primary-1);
-  box-shadow: 0 8px 20px rgba(251, 15, 90, 0.25);
+  box-shadow: var(--shadow-button-hover);
 }
 
 .button-secondary {
   color: var(--primary-1);
   background: var(--white);
-  box-shadow: 0 10px 26px rgba(35, 32, 70, 0.08);
+  box-shadow: var(--shadow-button-secondary);
 }
 
 .button-secondary:hover {
@@ -171,14 +171,14 @@
 
   .hero-social,
   .footer-social {
-    grid-template-columns: repeat(2, 60px);
-    gap: 16px;
+    grid-template-columns: repeat(2, 40px);
+    gap: 12px;
   }
 
   .hero-social a,
   .footer-social a {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 15px;
   }
 }

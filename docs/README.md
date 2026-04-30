@@ -35,11 +35,11 @@ Use a local server instead of opening `index.html` directly so relative assets, 
 - `assets/css/components.css` defines reusable UI components such as buttons, social icons, and dropdown-related styles.
 - `assets/css/sections.css` composes full page sections: header, hero, achievements, videos, about, packages, FAQ, contact, and footer.
 - `assets/css/motion.css` contains the `data-ix` reveal animation system.
-- `assets/js/header.js` handles header scroll state and mobile navigation.
+- `assets/js/header.js` handles header scroll state.
 - `assets/js/dropdown.js` handles FAQ disclosure behavior.
 - `assets/js/reveal.js` handles load and scroll reveal animation.
 - `assets/js/stats.js` handles achievement count-up animation.
-- `assets/js/reels.js` handles reel lazy-loading, hover preview, and click-to-play behavior.
+- `assets/js/reels.js` handles reel lazy-loading, mobile "View More", hover preview, and click-to-play behavior.
 - `assets/js/main.js` is the small bootstrap file.
 - `assets/svgs/` contains the SVG assets used by the page.
 - `assets/fonts/` contains local Montserrat font files.
@@ -74,7 +74,7 @@ Preferred media paths:
 - posters: `assets/images/posters/reel-01.jpg`
 - public reels: `assets/videos/reel-01.mp4`
 
-Reel cards are optimized so poster images appear immediately and MP4 files lazy-load later. Keep the video URL in `data-src`, not `src`, and keep `preload="none"` in `index.html`. `assets/js/reels.js` attaches the real `src` when the card is near the viewport or the user interacts.
+Reel cards are optimized so poster images appear immediately and MP4 files lazy-load later. Keep the video URL in `data-src`, not `src`, and keep `preload="none"` in `index.html`. `assets/js/reels.js` attaches the real `src` when the card is near the viewport or the user interacts. On mobile, only the first three reels show initially; the `View More` button expands the remaining reels with a CSS transition.
 
 ## Styling Conventions
 
@@ -87,6 +87,35 @@ Use the split CSS layers instead of adding one-off rules to `index.html`.
 - Put animation-only rules in `assets/css/motion.css`.
 
 Prefer existing classes and section patterns. Use `text-wrap: balance` for short display copy where it improves line breaks, but avoid it for dense lists or long form-field labels.
+
+## Color Testing
+
+The default palette is defined in `assets/css/base.css` as root CSS variables. `colors=0` is the default palette, and `colors=1` through `colors=5` are close variations for refining the current pink/editorial direction.
+
+```text
+http://127.0.0.1:4173/?colors=0
+http://127.0.0.1:4173/?colors=1
+http://127.0.0.1:4173/?colors=2
+http://127.0.0.1:4173/?colors=3
+http://127.0.0.1:4173/?colors=4
+http://127.0.0.1:4173/?colors=5
+```
+
+`index.html` reads the `colors` query parameter early and sets `html[data-theme]` before the stylesheet loads. Keep component and section CSS pointed at variables instead of hardcoded colors so new palettes can be tested by changing only the color tokens in `base.css`.
+
+## Font Testing
+
+The default font pairing is Lora headings with Montserrat body/UI. `fonts=0` and no `fonts` parameter both use that default. `fonts=2` through `fonts=5` are alternate editorial options built around serif headings and readable sans-serif UI/body text.
+
+```text
+http://127.0.0.1:4173/?fonts=0
+http://127.0.0.1:4173/?fonts=2
+http://127.0.0.1:4173/?fonts=3
+http://127.0.0.1:4173/?fonts=4
+http://127.0.0.1:4173/?fonts=5
+```
+
+Font choices are defined in `assets/css/base.css` with `--font-body`, `--font-heading`, `--font-ui`, and `--font-heading-weight` tokens. `index.html` reads the `fonts` query parameter early and sets `html[data-fonts]` before the stylesheet loads. Keep font-family usage routed through these tokens instead of hardcoding families in section or component CSS.
 
 ## JavaScript Conventions
 
@@ -128,9 +157,9 @@ After visual or behavior edits, run the local server and inspect:
 - desktop around `1440px`
 - mobile around `390px`
 - full-page screenshots for blank sections, overflow, or clipped text
-- mobile navigation open/close
+- desktop navigation visibility and mobile header spacing
 - FAQ open/close
-- reel lazy-loading and playback
+- mobile reel "View More", reel lazy-loading, and playback
 - contact section and footer wrapping on mobile
 
 ## Deployment

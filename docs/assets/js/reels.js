@@ -55,6 +55,13 @@
   const init = () => {
     const cards = Array.from(document.querySelectorAll(SELECTOR));
     if (!cards.length) return;
+    const track = document.querySelector(".reels-track");
+    const toggle = document.querySelector("[data-reels-toggle]");
+
+    toggle?.addEventListener("click", () => {
+      track?.classList.add("is-expanded");
+      toggle.setAttribute("aria-expanded", "true");
+    });
 
     cards.forEach((card) => {
       const button = card.querySelector(".reel-phone");
