@@ -150,14 +150,16 @@
 
 .achievement-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: min(100% - 10vw, 1120px);
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  width: min(100%, calc((100vw + var(--container)) / 2));
   max-width: none;
   margin: -98px auto 0 0;
-  padding: 70px 7vw 70px max(24px, calc((100vw - var(--container)) / 2 + 24px));
+  padding: 70px clamp(32px, 4vw, 64px) 70px max(24px, calc((100vw - var(--container)) / 2 + 24px));
   border-radius: 0 43px 43px 0;
   background: var(--white);
   box-shadow: var(--shadow-achievement);
+  column-gap: clamp(58px, 5vw, 92px);
   row-gap: 22px;
 }
 
@@ -177,6 +179,7 @@
   color: var(--neutral-700);
   font-size: 62px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .achievement .proof-stat-prefix,
@@ -190,6 +193,7 @@
 
 .achievement .proof-stat-range {
   color: var(--neutral-700);
+  font-size: 0.9em;
   white-space: nowrap;
 }
 
@@ -909,6 +913,14 @@
     padding-bottom: 150px;
   }
 
+  .achievement-grid {
+    column-gap: 38px;
+  }
+
+  .achievement strong {
+    font-size: 50px;
+  }
+
   .videos-section {
     padding-top: 132px;
   }
@@ -958,7 +970,7 @@
     padding: 42px 24px;
     border-radius: 0;
     gap: 24px;
-    justify-content: center;
+    justify-content: stretch;
   }
 
   .achievement {
