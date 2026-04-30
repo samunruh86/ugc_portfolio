@@ -81,7 +81,7 @@ If improving icons:
 Expected media paths:
 
 - hero: `docs/assets/images/hero.jpg`
-- contact: `docs/assets/images/contact.jpg`
+- contact: `docs/assets/images/contact.jpeg`
 - posters: `docs/assets/images/posters/reel-XX.jpg`
 - public videos: `docs/assets/videos/reel-XX.mp4`
 - raw videos: `docs/assets/videos/raw-XX.mp4`

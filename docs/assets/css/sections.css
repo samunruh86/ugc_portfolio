@@ -267,7 +267,7 @@
 
 .contact-section__photo {
   min-height: 540px;
-  background: url("../images/contact.jpg") center 40% / cover no-repeat;
+  background: url("../images/contact.jpeg") center 40% / cover no-repeat;
   filter: saturate(0.95) contrast(0.98);
 }
 
