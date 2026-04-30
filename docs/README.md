@@ -78,8 +78,8 @@ The form uses `assets/js/contact.js` to submit with `fetch()`, keep visitors on 
 
 Preferred media paths:
 
-- hero image: `assets/images/image-home-hero-hayley-p-1200.jpeg`
-- about images: `assets/images/image-about-hayley-01-p-800.jpeg` and `assets/images/image-about-hayley-02-p-800.jpeg`
+- hero image: `assets/images/hero-hayley-v2-p-1200.jpeg`
+- about image: `assets/images/about-hayley-v2c-p-800.jpg`
 - posters: `assets/images/posters/reel-01.jpg`
 - public reels: `assets/videos/reel-01.mp4`
 
