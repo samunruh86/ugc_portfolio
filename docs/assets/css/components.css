@@ -121,7 +121,7 @@
 .hero-social,
 .footer-social {
   display: grid;
-  grid-template-columns: repeat(2, 74px);
+  grid-template-columns: repeat(3, 74px);
   justify-content: center;
   gap: 22px;
 }
@@ -150,8 +150,25 @@
   height: 100%;
 }
 
+.hero-social .social-link-amazon,
+.footer-social .social-link-amazon {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(12, 10, 32, 0.1);
+}
+
+.hero-social .social-link-amazon:hover,
+.footer-social .social-link-amazon:hover {
+  box-shadow: inset 0 0 0 1px rgba(12, 10, 32, 0.14);
+}
+
+.hero-social .social-link-amazon img,
+.footer-social .social-link-amazon img {
+  width: 68%;
+  height: 68%;
+}
+
 .hero-social {
-  grid-template-columns: repeat(2, 46px);
+  grid-template-columns: repeat(3, 46px);
   justify-content: start;
   gap: 12px;
 }
@@ -177,7 +194,7 @@
 
   .hero-social,
   .footer-social {
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(3, 40px);
     gap: 12px;
   }
 

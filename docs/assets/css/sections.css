@@ -851,7 +851,7 @@
 
 .footer-social {
   display: grid;
-  grid-template-columns: repeat(2, 48px);
+  grid-template-columns: repeat(3, 48px);
   justify-content: end;
   gap: 14px;
 }
@@ -1113,7 +1113,7 @@
 
   .footer-social {
     justify-content: end;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(3, 40px);
     gap: 12px;
   }
 
